@@ -10,7 +10,7 @@ Welcome to the *Geophysical Tutorial* Machine Learning Contest 2016! Read all ab
 You can also clone or download this repo with the green button, above, or just read the documents:
 
 - [index.ipynb](index.ipynb) &mdash; All about the contest.
-- [Facies_classification.ipynb] & mdash; Brendon's notebook with all the code you need to get started in machine learning in Python.
+- [Facies_classification.ipynb](Facies_classification.ipynb) & mdash; Brendon's notebook with all the code you need to get started in machine learning in Python.
 
 
 ## Getting started with Python
