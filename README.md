@@ -1,5 +1,4 @@
 # 2016-ml-contest
-Machine learning contest
 
 Welcome to the *Geophysical Tutorial* Machine Learning Contest 2016! Read all about the contest in [the October 2016 issue](http://library.seg.org/toc/leedff/35/10) of the magazine. Look for Brendon Hall's tutorial on lithology prediction with machine learning.
 
@@ -7,10 +6,18 @@ Welcome to the *Geophysical Tutorial* Machine Learning Contest 2016! Read all ab
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/seg/2016-ml-contest)
 
-You can also clone or download this repo with the green button, above, or just read the documents:
+You can also clone or download this repo with the green button above, or just read the documents:
 
 - [index.ipynb](index.ipynb) &mdash; All about the contest.
 - [Facies_classification.ipynb](Facies_classification.ipynb) &mdash; Brendon's notebook with all the code you need to get started in machine learning in Python.
+
+
+## Leaderboard
+
+F1 scores of models against the `SHANKLE` well, held blind to all training.
+
+1. [CannedGeo](https://github.com/cannedgeo) (Bryan Page) — **0.56** (validated) — Bryan's notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb)
+1. [BrendonHall](https://github.com/brendonhall) — **0.42** — initial score in article
 
 
 ## Getting started with Python
