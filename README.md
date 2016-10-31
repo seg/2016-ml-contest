@@ -16,7 +16,7 @@ You can also clone or download this repo with the green button above, or just re
 
 F1 scores of models against the `SHANKLE` well, held blind to all training.
 
-1. [CannedGeo](https://github.com/cannedgeo) (Bryan Page) — **0.56** (validated) — Bryan's notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb)
+1. [CannedGeo](https://github.com/cannedgeo) — **0.56** (validated) — [Bryan's notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb)
 1. [BrendonHall](https://github.com/brendonhall) — **0.42** — initial score in article
 
 
