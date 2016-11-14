@@ -14,10 +14,12 @@ You can also clone or download this repo with the green button above, or just re
 
 ## Leaderboard
 
-F1 scores of models against the `SHANKLE` well, held blind to all training.
+F1 scores of models against secret blind data in the STUART and CRAWFORD wells. The logs for those wells are available [in the repo](https://github.com/seg/2016-ml-contest/blob/master/validation_data_nofacies.csv), but contestants do not have access to the facies.
 
-1. [CannedGeo](https://github.com/cannedgeo) — **0.56** (validated) — [Bryan's notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb)
-1. [BrendonHall](https://github.com/brendonhall) — **0.42** — initial score in article
+|   | Team                                          | F1         | Solution                 |
+|:-:|-----------------------------------------------|:----------:|---|
+| 1 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
+| 2 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | Initial score in article |
 
 
 ## Getting started with Python
