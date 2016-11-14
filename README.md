@@ -29,6 +29,8 @@ Please refer to the [User guide to the geophysical tutorials](http://library.seg
 
 ## Find out more about the contest
 
+If you intend to enter this contest, I suggest you check [the open issues](https://github.com/seg/2016-ml-contest/issues) and read through  [the closed issues](https://github.com/seg/2016-ml-contest/issues?q=is%3Aissue+is%3Aclosed) too. There's some good info in there.
+
 To find out more please read the article in [the October issue](http://library.seg.org/toc/leedff/35/10) or read the manuscript in the [`tutorials-2016`](https://github.com/seg/tutorials-2016) repo.
 
 
@@ -36,10 +38,10 @@ To find out more please read the article in [the October issue](http://library.s
 
 We've never done anything like this before, so there's a good chance these rules will become clearer as we go. We aim to be fair at all times, and reserve the right to make judgment calls for dealing with unforeseen circumstances.
 
-**IMPORTANT: When this contest was first published, we asked you to hold the SHANKLE well blind. This is no longer necessary. You can use all the published wells in your training. Related: I am removin the file of predicted facies for the STUART and CRAWFORD wells, to reduce confusion — they are not actual facies, only those predicted by Brendon's first model.**
+**IMPORTANT: When this contest was first published, we asked you to hold the SHANKLE well blind. This is no longer necessary. You can use all the published wells in your training. Related: I am removing the file of predicted facies for the STUART and CRAWFORD wells, to reduce confusion — they are not actual facies, only those predicted by Brendon's first model.**
 
 - You must submit your result as code and we must be able to run your code.
-- **We are still working out the exact details of the comparison criteria. It will likely be a comparison against known facies in the STUART and CRAWFORD wells, which do not have labels in the contest dataset.** See [issue #2 regarding this point.](https://github.com/seg/2016-ml-contest/issues/2).
+- **Entries will be scored by a comparison against known facies in the STUART and CRAWFORD wells, which do not have labels in the contest dataset. We will use the F1 cross-validation score.** See [issue #2 regarding this point.](https://github.com/seg/2016-ml-contest/issues/2). The scores in the 'leaderboard' reflect this.
 - The result we get with your code is the one that counts as your result.
 - To make it more likely that we can run it, your code must be written in Python or R or Julia **or Lua** [updated 26 Oct].
 - The contest is over at 23:59:59 UT (i.e. midnight in London, UK) on 31 January 2017. Pull requests made aftetr that time won't be eligible for the contest.
