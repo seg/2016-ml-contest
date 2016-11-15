@@ -18,9 +18,11 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 
 |   | Team                                          | F1         | Solution                 |
 |:-:|-----------------------------------------------|:----------:|---|
-| 1 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
-| 2 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | Initial score in article |
+| 1 | LA_Team                                       | **0.519**<sup>1</sup>|  [Notebook](LA_Team/Facies_classification_LA_TEAM.ipynb) |
+| 2 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
+| 3 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | Initial score in article |
 
+<sup>1</sup>&nbsp;Pending complete validation.
 
 ## Getting started with Python
 
