@@ -50,3 +50,11 @@ We've never done anything like this before, so there's a good chance these rules
 - If you can do even better with code you don't wish to share fully, that's really cool, nice work! But you can't enter it for the contest. We invite you to share your result through your blog or other channels... maybe a paper in *The Leading Edge*.
 - This document and documents it links to will be the channel for communication of the leading solution and everything else about the contest.
 - This document contains the rules. Our decision is final. No purchase necessary. Please exploit artificial intelligence responsibly. 
+
+## Licenses
+
+**Please note that the dataset is not openly licensed. We are working on this, but for now please treat it as proprietary. It is shared here exclusively for use on this problem, in this contest. We hope to have news about this in early 2017, if not before.**
+
+All code is the property of its author and subject to the terms of their choosing. If in doubt — ask them.
+
+The information about the contest, and the original article, and everything in this repo published under the auspices of SEG, is licensed CC-BY and OK to use with attribution.
