@@ -16,12 +16,12 @@ You can also clone or download this repo with the green button above, or just re
 
 F1 scores of models against secret blind data in the STUART and CRAWFORD wells. The logs for those wells are available [in the repo](https://github.com/seg/2016-ml-contest/blob/master/validation_data_nofacies.csv), but contestants do not have access to the facies.
 
-|   | Team                                          | F1         | Algorithm | Language | Solution                 |
-|:-:|-----------------------------------------------|:----------:|-----------|----------|--------------------------|
-| 1 | [gganssle](https://github.com/gganssle)       | **0.579**<sup>1</sup>| Neural net | Lua |  [Notebook](gram/faye.ipynb) |
+|   | Team                                          | F1         | Algorithm  | Language | Solution                 |
+|:-:|-----------------------------------------------|:----------:|------------|----------|--------------------------|
+| 1 | [gganssle](https://github.com/gganssle)       | **0.561**  | Neural net | Lua |  [Notebook](gram/faye.ipynb) |
 | 2 | LA_Team                                       | **0.519**<sup>1</sup>| Boosted trees | Python |  [Notebook](LA_Team/Facies_classification_LA_TEAM.ipynb) |
-| 3 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM | Python | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
-| 4 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM | Python | Initial score in article |
+| 3 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM        | Python | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
+| 4 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM        | Python | Initial score in article |
 
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
 
