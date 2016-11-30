@@ -1,0 +1,72 @@
+#This is my first time using a notebook and github so I just want to run the inital SVM to see how it works and what is the accuracy I am getting
+
+
+```{r}
+library(e1071)
+```
+
+#Reading the file
+```{r}
+train_prod = read.csv('facies_vectors.csv')
+test_prod = read.csv('nofacies_data.csv')
+```
+
+
+#Check the structure of the file 
+```{r}
+str(train_prod)
+str(test_prod)
+```
+
+
+#Removing the rows with NA's
+```{r}
+train_prod = train_prod[!is.na(train_prod$PE),]
+```
+
+
+#Converting the Facies column to factor
+```{r}
+train_prod$Facies = as.factor(as.character(train_prod$Facies))
+```
+
+#Splitting into train and local validation test
+```{r}
+train_row = sample(nrow(train_prod), 0.7*nrow(train_prod), replace=F)
+train_local = train_prod[train_row,]
+test_local  = train_prod[-train_row,]
+```
+
+#Creating SVM model
+```{r}
+SVM.local.model = svm(Facies~., data = train_local[!colnames(train_local) %in% c('Formation',
+                                                                                 'Well.Name',
+                                                                                 'Depth'
+                                                                                 )])
+SVM.local.pred = predict(SVM.local.model, newdata = test_local)
+```
+
+#Local validation set accuracy
+```{r}
+acc_table_SVM = table(SVM.local.pred, test_local$Facies)
+acc_table_SVM
+acc_SVM = sum(diag(acc_table_SVM))/nrow(test_local)
+acc_SVM
+```
+
+
+#Predicting on the blind dataset
+```{r}
+SVM.prod.pred = predict(SVM.local.model, newdata = test_prod)
+```
+
+#Forming the submission file
+```{r}
+sub = cbind(test_prod, Facies = SVM.prod.pred)
+```
+
+#Writting the predicted output file
+```{r}
+write.csv(sub, row.names= F, 'SVM_predicted_facies_1.csv')
+```
+
