@@ -1,7 +1,5 @@
 # 2016-ml-contest
 
-helllo
-
 Welcome to the *Geophysical Tutorial* Machine Learning Contest 2016! Read all about the contest in [the October 2016 issue](http://library.seg.org/toc/leedff/35/10) of the magazine. Look for Brendon Hall's tutorial on lithology prediction with machine learning.
 
 **You can run the notebooks in this repo in the cloud, just click the badge below:**
