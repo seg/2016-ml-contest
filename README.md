@@ -22,7 +22,8 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 2 | [gganssle](https://github.com/gganssle)       | **0.561**  | DNN        | Lua      |  [Notebook](gram/faye.ipynb) |
 | 3 | MandMs                                        | **0.536**  | SVM        | Python      |  [Notebook](MandMs/Facies_classification-M%26Ms_SVM_rbf_kernel.ipynb) |
 | 4 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM        | Python | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
-| 5 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM        | Python | Initial score in article |
+| 5 | geoLEARN                                      | **0.468**  | Random forest  | Python | [Notebook](geoLEARN/Submission.ipynb) |
+| 6 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM        | Python | Initial score in article |
 
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
 
