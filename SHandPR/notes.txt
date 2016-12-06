@@ -1,0 +1,45 @@
+Formations: A1-B5, C; SH, LM
+
+SHRIMPLIN: 2,3,4.5,6,7,8,9
+SHANKLE: 1,2,3,4,6,7,8
+LUKE G U: 2,3,4,5,6,7,8
+CROSS H CATTLE: 1,2,3,4,5,6,7,8
+NOLAN: 1,2,3,4,5,6,7,8,9
+Recruit F9: 9
+NEWBY: 2,3,4,5,6,7,8,9
+CHURCHMAN BIBLE: 1,2,3,4,5,6,7,8,9
+
+half-foot sample rate
+
+Features (combined make a Feature Vector)
+WireLog: Gamma ray (GR)
+WireLog: Resistivity (ILD_log10)
+WireLog: Photoelectric effect (PE)
+WireLog: Neutron-density porosity difference (DeltaPHI)
+WireLog: Average neutron-density porosity (PHIND)
+Geologic Constraining Variable: Nonmarine/marine indicator (NM_M)
+Geologic Constraining Variable: Relative position (RELPOS)
+
+Facies	Description	Label	Adjacent facies
+1	Nonmarine sandstone	SS	2
+2	Nonmarine course siltstone	CSiS	1,3
+3	Nonmarine fine siltstone	FSiS	2
+4	Marine siltstone and shale	SiSh	5
+5	Mudstone	MS	4,6
+6	Wackestone	WS	5,7,8
+7	Dolomite	D	6,8
+8	Packstone-grainstone	PS	6,7,9
+9	Phylloid-algal bafflestone	BS	7,8
+
+
+https://books.google.ro/books?id=CRguAgAAQBAJ&lpg=PA35&ots=-EbKpfG5rU&dq=facies%20identification%20accuracy%20of%20gamma%20ray&pg=PA37#v=onepage&q=facies%20identification%20accuracy%20of%20photoelectric%20effect&f=false
+
+GR & ILD_log10 are more accurate for non-marine/tidal environments
+Porosity is more reliable for delineating facies
+
+https://books.google.ro/books?id=Eb8P3oQGmRkC&lpg=PR3&dq=facies%20identification%20photoelectric%20effect&pg=PA253#v=onepage&q=photoelectric%20effect&f=false
+https://books.google.ro/books?id=Eb8P3oQGmRkC&lpg=PR3&dq=facies%20identification%20photoelectric%20effect&pg=PA302#v=onepage&q=photoelectric%20effect&f=false
+Photoelectric effect more accurate since related to atomic number
+
+
+RELPOS is another way of saying depth (1.0 = top of facies; 0.0 = bottom of facies)
