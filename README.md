@@ -18,7 +18,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 
 |   | Team                                          | F1         | Algorithm  | Language | Solution                 |
 |:-:|-----------------------------------------------|:----------:|------------|----------|--------------------------|
-| 1 | LA_Team                                       | **0.568**<sup>1</sup>| DNN | Python |  [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
+| 1 | LA_Team                                       | **0.568**  | DNN | Python |  [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
 | 2 | [gganssle](https://github.com/gganssle)       | **0.561**  | DNN        | Lua      |  [Notebook](gram/faye.ipynb) |
 | 2 | [thanish](https://github.com/thanish)         | **0.547**  | SVM        | R        |  [Notebook](Mendacium/SVM_notebook.Rmd) |
 | 3 | MandMs                                        | **0.536**  | SVM        | Python      |  [Notebook](MandMs/Facies_classification-M%26Ms_SVM_rbf_kernel.ipynb) |
@@ -26,7 +26,9 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 4 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM        | Python | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
 | 6 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM        | Python | Initial score in article |
 
+<!--
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
+-->
 
 ## Getting started with Python
 
