@@ -18,7 +18,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 
 |   | Team                                          | F1         | Algorithm  | Language | Solution                 |
 |:-:|-----------------------------------------------|:----------:|------------|----------|--------------------------|
-| 1 | [gccrowther](https://github.com/gccrowther)       | **0.580**  | Random forest  | Python      |  [Notebook](GCC_FaciesClassification/01%20-%20Facies%20Classification%20-%20GCC.ipynb) |
+| 1 | [gccrowther](https://github.com/gccrowther)       | **0.580**  | Random forest  | Python      |  [Notebook](GCC_FaciesClassification/01%20-%20Facies%20Classification%20-%20GCC-VALIDATION.ipynb) |
 | 2 | LA_Team                                       | **0.568**  | DNN | Python |  [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
 | 3 | [gganssle](https://github.com/gganssle)       | **0.561**  | DNN        | Lua      |  [Notebook](gram/faye.ipynb) |
 | 4 | MandMs                                        | **0.552**  | SVM        | Python      |  [Notebook](MandMs/Facies_classification-M%26Ms_SVM_rbf_kernel_optimal.ipynb) |
