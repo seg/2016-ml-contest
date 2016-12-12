@@ -18,14 +18,14 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 
 |   | Team                                          | F1         | Algorithm  | Language | Solution                 |
 |:-:|-----------------------------------------------|:----------:|------------|----------|--------------------------|
-| 1 | LA_Team                                       | **0.568**  | DNN | Python |  [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
-| 2 | [gccrowther](https://github.com/gccrowther)       | **0.565**  | Random forest  | Python      |  [Notebook](GCC_FaciesClassification/01%20-%20Facies%20Classification%20-%20GCC.ipynb) |
-| 2 | [gganssle](https://github.com/gganssle)       | **0.561**  | DNN        | Lua      |  [Notebook](gram/faye.ipynb) |
-| 3 | MandMs                                        | **0.552**  | SVM        | Python      |  [Notebook](MandMs/Facies_classification-M%26Ms_SVM_rbf_kernel_optimal.ipynb) |
-| 4 | [thanish](https://github.com/thanish)         | **0.547**  | SVM        | R        |  [Notebook](Mendacium/SVM_notebook.Rmd) |
-| 5 | geoLEARN                                      | **0.530**  | Random forest  | Python | [Notebook](geoLEARN/Submission_increased_variance.ipynb) |
-| 6 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM        | Python | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
-| 7 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM        | Python | Initial score in article |
+| 1 | [gccrowther](https://github.com/gccrowther)       | **0.580**  | Random forest  | Python      |  [Notebook](GCC_FaciesClassification/01%20-%20Facies%20Classification%20-%20GCC.ipynb) |
+| 2 | LA_Team                                       | **0.568**  | DNN | Python |  [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
+| 3 | [gganssle](https://github.com/gganssle)       | **0.561**  | DNN        | Lua      |  [Notebook](gram/faye.ipynb) |
+| 4 | MandMs                                        | **0.552**  | SVM        | Python      |  [Notebook](MandMs/Facies_classification-M%26Ms_SVM_rbf_kernel_optimal.ipynb) |
+| 5 | [thanish](https://github.com/thanish)         | **0.547**  | SVM        | R        |  [Notebook](Mendacium/SVM_notebook.Rmd) |
+| 6 | geoLEARN                                      | **0.530**  | Random forest  | Python | [Notebook](geoLEARN/Submission_increased_variance.ipynb) |
+| 7 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM        | Python | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
+| 8 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM        | Python | Initial score in article |
 
 <!--
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
