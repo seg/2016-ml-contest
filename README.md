@@ -24,10 +24,11 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 4 | [gganssle](https://github.com/gganssle)       | **0.561**  | DNN           | Lua      | [Notebook](gram/faye.ipynb) |
 | 5 | [thanish](https://github.com/thanish)         | **0.560**  | Random forest | R        | [Notebook](Mendacium/RF_notebook_2.Rmd) |
 | 6 | [wouterk1MSS](https://github.com/wouterk1MSS) | **0.557**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
-| 7 | geoLEARN                                      | **0.530**  | Random forest | Python   | [Notebook](geoLEARN/Submission_increased_variance.ipynb) |
-| 8 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM           | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
-| 9 | SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
-| 10 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM           | Python   | Initial score in article |
+| 7 | HouMath                                       | **0.540**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_01.ipynb) |
+| 8 | geoLEARN                                      | **0.530**  | Random forest | Python   | [Notebook](geoLEARN/Submission_increased_variance.ipynb) |
+| 9 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM           | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
+| 10 | SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
+| 11 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM           | Python   | Initial score in article |
 
 <!--
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
