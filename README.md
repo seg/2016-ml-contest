@@ -20,7 +20,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 |:-:|-----------------------------------------------|:----------:|---------------|----------|--------------------------|
 | 1 | [gccrowther](https://github.com/gccrowther)   | **0.580**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/01%20-%20Facies%20Classification%20-%20GCC-VALIDATION.ipynb) |
 | 2 | MandMs                                        | **0.579**  | Majority voting | Python   | [Notebook](MandMs/Facies_classification-M%26Ms_plurality_voting_classifier.ipynb) |
-| 3 | LA_Team                                       | **0.568**  | DNN           | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
+| 3 | LA_Team                                       | **0.574**<sup>1</sup>  | DNN           | Python   | No notebook yet |
 | 4 | [gganssle](https://github.com/gganssle)       | **0.561**  | DNN           | Lua      | [Notebook](gram/faye.ipynb) |
 | 5 | [thanish](https://github.com/thanish)         | **0.560**  | Random forest | R        | [Notebook](Mendacium/RF_notebook_2.Rmd) |
 | 6 | [wouterk1MSS](https://github.com/wouterk1MSS) | **0.557**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
@@ -32,9 +32,8 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 12 | SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
 | 13 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM           | Python   | Initial score in article |
 
-<!--
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
--->
+
 
 ## Getting started with Python
 
