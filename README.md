@@ -20,17 +20,17 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 |:-:|-----------------------------------------------|:----------:|---------------|----------|--------------------------|
 | 1 | geoLEARN                                       | **0.594**  | Random forest | Python | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
 | 2 | [gccrowther](https://github.com/gccrowther)    | **0.580**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/01%20-%20Facies%20Classification%20-%20GCC-VALIDATION.ipynb) |
-| 3 | MandMs                                         | **0.579**  | Majority voting | Python   | [Notebook](MandMs/Facies_classification-M%26Ms_plurality_voting_classifier.ipynb) |
+| 3 | MandMs                                         | **0.579**  | Majority voting | Python | [Notebook](MandMs/Facies_classification-M%26Ms_plurality_voting_classifier.ipynb) |
 | 4 | LA_Team                                        | **0.574**<sup>1</sup>  | DNN           | Python   | No notebook yet |
 | 5 | [gganssle](https://github.com/gganssle)        | **0.561**  | DNN           | Lua      | [Notebook](gram/faye.ipynb) |
 | 6 | [thanish](https://github.com/thanish)          | **0.560**  | Random forest | R        | [Notebook](Mendacium/RF_notebook_2.Rmd) |
 | 7 | [wouterk1MSS](https://github.com/wouterk1MSS)  | **0.557**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
-| 8 | [osorensen](https://github.com/osorensen)      | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
-| 9 | HouMath                                        | **0.540**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_01.ipynb) |
-| 10 | Bird Team                                     | **0.524**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification.ipynb) |
-| 11 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM           | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
-| 12 | SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
-| 13 | [CEsprey](https://github.com/CEsprey)         | **0.454**  | Random forest | Python   | [Notebook](CEsprey%20-%20RandomForest) |
+| 8 | [CEsprey](https://github.com/CEsprey)          | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
+| 9 | [osorensen](https://github.com/osorensen)      | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
+| 10| HouMath                                        | **0.540**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_01.ipynb) |
+| 11 | Bird Team                                     | **0.524**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification.ipynb) |
+| 12 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM           | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
+| 13 | SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
 | 14 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM           | Python   | Initial score in article |
 
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
