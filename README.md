@@ -32,7 +32,8 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 12| Bird Team                                     | **0.524**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification.ipynb) |
 | 13 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM           | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
 | 14 | SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
-| 15 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM           | Python   | Initial score in article |
+| 15 | [JesperDramsch](https://github.com/JesperDramsch) | **0.456**  | SVM | Python   | [Notebook](JesperDramsch/Facies_classification_NMM_Split-Jesper.ipynb) |
+| 16 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM           | Python   | Initial score in article |
 
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
 
