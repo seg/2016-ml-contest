@@ -29,7 +29,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 9 | [CEsprey](https://github.com/CEsprey)          | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
 | 10| [osorensen](https://github.com/osorensen)      | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
 | 11| [evgenizer](https://github.com/evgenizer)      | **0.546**  | Majority voting | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
-| 12| Bird Team                                     | **0.527**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification.ipynb) |
+| 12| Bird Team                                     | **0.527**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_3.ipynb) |
 | 13 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM           | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
 | 14 | SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
 | 15 | [JesperDramsch](https://github.com/JesperDramsch) | **0.456**  | SVM | Python   | [Notebook](JesperDramsch/Facies_classification_NMM_Split-Jesper.ipynb) |
