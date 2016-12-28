@@ -35,18 +35,11 @@ test_local  = train_prod[train_prod$Well.Name %in% c('SHRIMPLIN'),]
 #H2o model
 library(h2o)
 start.h2o = h2o.init(nthreads = -1)
-train_local_h2o = as.h2o(train_local[!colnames(train_local) %in% c(#'Formation',
-                                                                  #'Depth',
-                                                                  #'RELPOS_next',
-                                                                  #'RELPOS_previous',
-                                                                  'Well.Name'
-                                                              )])
+train_local_h2o = as.h2o(train_local[!colnames(train_local) %in% c('Well.Name')])
 test_local_h2o  = as.h2o(test_local)
 test_prod_h2o  = as.h2o(test_prod)
 
-x.indep = colnames(train_local_h2o[,!colnames(train_local_h2o) %in% c('RELPOS_next',
-                                                                      'RELPOS_previous',
-                                                                      'Facies')])
+x.indep = colnames(train_local_h2o[,!colnames(train_local_h2o) %in% c('Facies')])
 y.dep = 'Facies'
 
 #gbm
