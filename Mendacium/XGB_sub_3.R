@@ -1,9 +1,3 @@
-#Office
-setwd('D:/Thanish/D/Thanish Folder/Compeditions/Facies')
-
-#Laptop
-setwd('E:/Thanish/Data science/Facies')
-
 #Desktop
 setwd('D:/Thanish/D/Thanish Folder/Compeditions/Facies')
 
