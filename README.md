@@ -31,9 +31,10 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 11| [evgenizer](https://github.com/evgenizer)      | **0.546**  | Majority voting | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
 | 12| Bird Team                                     | **0.527**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_3.ipynb) |
 | 13 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM           | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
-| 14 | SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
-| 15 | [JesperDramsch](https://github.com/JesperDramsch) | **0.456**  | SVM | Python   | [Notebook](JesperDramsch/Facies_classification_NMM_Split-Jesper.ipynb) |
-| 16 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM           | Python   | Initial score in article |
+| 14 | [daghra](https://github.com/dagrha)           | **0.506**  | k neighbours | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
+| 15 | SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
+| 16 | [JesperDramsch](https://github.com/JesperDramsch) | **0.456**  | SVM | Python   | [Notebook](JesperDramsch/Facies_classification_NMM_Split-Jesper.ipynb) |
+| 17 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM           | Python   | Initial score in article |
 
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
 
