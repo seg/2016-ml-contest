@@ -21,7 +21,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 1 | geoLEARN                                       | **0.594**  | Random forest | Python | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
 | 2 | [gccrowther](https://github.com/gccrowther)    | **0.580**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/01%20-%20Facies%20Classification%20-%20GCC-VALIDATION.ipynb) |
 | 3 | MandMs                                         | **0.579**  | Majority voting | Python | [Notebook](MandMs/Facies_classification-M%26Ms_plurality_voting_classifier.ipynb) |
-| 4 | LA_Team                                        | **0.574**<sup>1</sup>  | DNN           | Python   | No notebook yet |
+| 4 | LA_Team                                       | **0.568**  | DNN           | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
 | 5 | HouMath                                        | **0.564**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_02.ipynb) |
 | 6 | [gganssle](https://github.com/gganssle)        | **0.561**  | DNN           | Lua      | [Notebook](gram/faye.ipynb) |
 | 7 | [thanish](https://github.com/thanish)          | **0.560**  | Random forest | R        | [Notebook](Mendacium/RF_notebook_2.Rmd) |
