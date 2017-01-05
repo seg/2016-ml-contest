@@ -18,8 +18,8 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 
 |   | Team                                          | F1         | Algorithm     | Language | Solution                 |
 |:-:|-----------------------------------------------|:----------:|---------------|----------|--------------------------|
-| 1 | geoLEARN                                      | **0.594**  | Random forest | Python | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
-| 2 | [bestagini](https://github.com/bestagini)     | **0.581**  | RandomForest  | Python   | [Notebook](ispl/facies_classification_try01.ipynb) |
+| 1 | [bestagini](https://github.com/bestagini)     | **0.604**  | RandomForest  | Python   | [Notebook](ispl/facies_classification_try02.ipynb) |
+| 2 | geoLEARN                                      | **0.594**  | Random forest | Python | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
 | 3 | [gccrowther](https://github.com/gccrowther)   | **0.580**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/01%20-%20Facies%20Classification%20-%20GCC-VALIDATION.ipynb) |
 | 4 | MandMs                                        | **0.579**  | Majority voting | Python | [Notebook](MandMs/Facies_classification-M%26Ms_plurality_voting_classifier.ipynb) |
 | 5 | LA_Team                                       | **0.568**  | Deep neural net | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
@@ -35,7 +35,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 15 | [daghra](https://github.com/dagrha)          | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
 | 16 | SHandPR                                      | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
 | 17 | [JesperDramsch](https://github.com/JesperDramsch) | **0.456**  | Support vector machine | Python   | [Notebook](JesperDramsch/Facies_classification_NMM_Split-Jesper.ipynb) |
-| 17 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
+| 18 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
 
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
 
