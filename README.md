@@ -16,16 +16,29 @@ You can also clone or download this repo with the green button above, or just re
 
 F1 scores of models against secret blind data in the STUART and CRAWFORD wells. The logs for those wells are available [in the repo](https://github.com/seg/2016-ml-contest/blob/master/validation_data_nofacies.csv), but contestants do not have access to the facies.
 
-|   | Team                                          | F1         | Algorithm  | Language | Solution                 |
-|:-:|-----------------------------------------------|:----------:|------------|----------|--------------------------|
-| 1 | LA_Team                                       | **0.568**<sup>1</sup>| DNN | Python |  [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
-| 2 | [gganssle](https://github.com/gganssle)       | **0.561**  | DNN        | Lua      |  [Notebook](gram/faye.ipynb) |
-| 3 | MandMs                                        | **0.536**  | SVM        | Python      |  [Notebook](MandMs/Facies_classification-M%26Ms_SVM_rbf_kernel.ipynb) |
-| 4 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | SVM        | Python | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
-| 5 | geoLEARN                                      | **0.468**  | Random forest  | Python | [Notebook](geoLEARN/Submission.ipynb) |
-| 6 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | SVM        | Python | Initial score in article |
+|   | Team                                          | F1         | Algorithm     | Language | Solution                 |
+|:-:|-----------------------------------------------|:----------:|---------------|----------|--------------------------|
+| 1 | [bestagini](https://github.com/bestagini)     | **0.604**  | RandomForest  | Python   | [Notebook](ispl/facies_classification_try02.ipynb) |
+| 2 | geoLEARN                                      | **0.594**  | Random forest | Python | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
+| 3 | [gccrowther](https://github.com/gccrowther)   | **0.580**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/01%20-%20Facies%20Classification%20-%20GCC-VALIDATION.ipynb) |
+| 3 | [thanish](https://github.com/thanish)         | **0.580**  | Random forest | R        | [Code](Mendacium/Mendacium/rf_sub_10.R) |
+| 5 | MandMs                                        | **0.579**  | Majority voting | Python | [Notebook](MandMs/Facies_classification-M%26Ms_plurality_voting_classifier.ipynb) |
+| 6 | LA_Team                                       | **0.568**  | Deep neural net | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
+| 7 | HouMath                                       | **0.564**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_02.ipynb) |
+| 8 | [gganssle](https://github.com/gganssle)       | **0.561**  | Deep neural net | Lua      | [Notebook](gram/faye.ipynb) |
+| 9 | [wouterk1MSS](https://github.com/wouterk1MSS) | **0.557**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
+| 10| [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
+| 11| [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
+| 12| [evgenizer](https://github.com/evgenizer)     | **0.546**  | Majority voting | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
+| 13 | [JesperDramsch](https://github.com/JesperDramsch) | **0.530**  | Random forest | Python   | [Notebook](JesperDramsch/Facies_classification_Xmas_Trees-Copy1.ipynb) |
+| 14| Bird Team                                     | **0.527**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_3.ipynb) |
+| 15 | [CannedGeo](https://github.com/cannedgeo)    | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
+| 16 | [daghra](https://github.com/dagrha)          | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
+| 17 | SHandPR                                      | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
+| 18 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
 
-<sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
+<!-- <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days. -->
+
 
 ## Getting started with Python
 
