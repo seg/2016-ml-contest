@@ -32,11 +32,11 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 12| [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
 | 13| [evgenizer](https://github.com/evgenizer)     | **0.546**  | Majority voting | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
 | 14 | [JesperDramsch](https://github.com/JesperDramsch) | **0.530**  | Random forest | Python   | [Notebook](JesperDramsch/Facies_classification_Xmas_Trees-Copy1.ipynb) |
-| 15 | [CannedGeo](https://github.com/ar4)          | **0.515**  | Support vector machine | Python   | [Code](ar4/ar4_submission001.py) |
-| 15 | [CannedGeo](https://github.com/cannedgeo)    | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
-| 16 | [daghra](https://github.com/dagrha)          | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
-| 17 | SHandPR                                      | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
-| 18 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
+| 15 | [ar4](https://github.com/ar4)                | **0.515**  | Support vector machine | Python   | [Code](ar4/ar4_submission001.py) |
+| 16 | [CannedGeo](https://github.com/cannedgeo)    | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
+| 17 | [daghra](https://github.com/dagrha)          | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
+| 18 | SHandPR                                      | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
+| 19 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
 
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
 
