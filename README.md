@@ -18,7 +18,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 
 |   | Team                                          | F1         | Algorithm     | Language | Solution                 |
 |:-:|-----------------------------------------------|:----------:|---------------|----------|--------------------------|
-| 1 | [bestagini](https://github.com/bestagini)     | **0.604**  | RandomForest  | Python   | [Notebook](ispl/facies_classification_try02.ipynb) |
+| 1 | [bestagini](https://github.com/bestagini)     | **0.604**  | Random forest  | Python   | [Notebook](ispl/facies_classification_try02.ipynb) |
 | 2 | Bird Team                                     | **0.598**<sup>1</sup>  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
 | 3 | geoLEARN                                      | **0.594**  | Random forest | Python | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
 | 4 | [gccrowther](https://github.com/gccrowther)   | **0.580**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/01%20-%20Facies%20Classification%20-%20GCC-VALIDATION.ipynb) |
@@ -32,6 +32,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 12| [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
 | 13| [evgenizer](https://github.com/evgenizer)     | **0.546**  | Majority voting | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
 | 14 | [JesperDramsch](https://github.com/JesperDramsch) | **0.530**  | Random forest | Python   | [Notebook](JesperDramsch/Facies_classification_Xmas_Trees-Copy1.ipynb) |
+| 15 | [CannedGeo](https://github.com/ar4)          | **0.515**  | Support vector machine | Python   | [Code](ar4/ar4_submission001.py) |
 | 15 | [CannedGeo](https://github.com/cannedgeo)    | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
 | 16 | [daghra](https://github.com/dagrha)          | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
 | 17 | SHandPR                                      | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
