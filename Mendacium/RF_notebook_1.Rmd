@@ -1,8 +1,9 @@
-#This is my first time using a notebook and github so I just want to run the inital SVM to see how it works and what is the accuracy I am getting
-
+#This is my second submission
 
 ```{r}
-library(e1071)
+#Remove the comment below and install if you don't have the package already installed.
+#install.packages('randomForest')
+library(randomForest)
 ```
 
 #Reading the file
