@@ -1,3 +1,3 @@
 SEG ML Contest  
-This is the first submission, without any feature engineering, to test the accuracy of Random Forest algorithm.  
-Running the script.R file will create an output csv file with the predicted facies in the last column.
+This is the second submission, with feature engineering as well as majority voting classification.
+Running the facies_classification.ipynb will create an output csv file with the predicted facies in the last column.
