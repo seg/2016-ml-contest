@@ -18,10 +18,10 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 
 |   | Team                                          | F1         | Algorithm     | Language | Solution                 |
 |:-:|-----------------------------------------------|:----------:|---------------|----------|--------------------------|
-| 1 | HouMath                                       | **0.615**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_06.ipynb) |
+| 1 | HouMath                                       | **0.615**<sup>1</sup>  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_06.ipynb) |
 | 2 | [ar4](https://github.com/ar4)                 | **0.606**  | Random forest | Python   | [Notebook](ar4/ar4_submission2.ipynb) |
 | 3 | [bestagini](https://github.com/bestagini)     | **0.604**  | Random forest | Python   | [Notebook](ispl/facies_classification_try02.ipynb) |
-| 4 | Bird Team                                     | **0.598**<sup>1</sup>  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
+| 4 | Bird Team                                     | **0.598**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
 | 5 | geoLEARN                                      | **0.594**  | Random forest | Python   | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
 | 6 | [gccrowther](https://github.com/gccrowther)   | **0.589**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/05%20-%20Facies%20Determination.ipynb) |
 | 7 | [thanish](https://github.com/thanish)         | **0.580**  | Random forest | R        | [Code](Mendacium/Mendacium/rf_sub_10.R) |
