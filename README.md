@@ -18,29 +18,29 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 
 |   | Team                                          | F1         | Algorithm     | Language | Solution                 |
 |:-:|-----------------------------------------------|:----------:|---------------|----------|--------------------------|
-| 1 | [ar4](https://github.com/ar4)                 | **0.606**  | Random forest | Python   | [Notebook](ar4/ar4_submission2.ipynb) |
-| 2 | [bestagini](https://github.com/bestagini)     | **0.604**  | Random forest | Python   | [Notebook](ispl/facies_classification_try02.ipynb) |
-| 3 | Bird Team                                     | **0.598**<sup>1</sup>  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
-| 4 | geoLEARN                                      | **0.594**  | Random forest | Python   | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
-| 5 | [gccrowther](https://github.com/gccrowther)   | **0.589**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/05%20-%20Facies%20Determination.ipynb) |
-| 6 | [thanish](https://github.com/thanish)         | **0.580**  | Random forest | R        | [Code](Mendacium/Mendacium/rf_sub_10.R) |
-| 7 | MandMs                                        | **0.579**  | Majority voting | Python | [Notebook](MandMs/Facies_classification-M%26Ms_plurality_voting_classifier.ipynb) |
-| 8 | PA Team                                       | **0.573**  | Deep neural net  | Python   | [Notebook](PA_Team/PA_Team_Submission_0.ipynb) |
-| 8 | [kr1m](https://github.com/kr1m)               | **0.570**  | AdaBoosted trees | Python   | [Notebook](Kr1m/Kr1m_SEG_ML_Attempt1.ipynb) |
-| 9 | LA_Team                                       | **0.568**  | Deep neural net | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
-| 9 | [fvf1361](https://github.com/fvf1361)         | **0.568**  | Majority voting | Python   | [Notebook](fvf/facies_classification.ipynb) |
-| 11 | HouMath                                      | **0.564**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_02.ipynb) |
-| 12 | [gganssle](https://github.com/gganssle)      | **0.561**  | Deep neural net | Lua      | [Notebook](gram/faye.ipynb) |
-| 12 | CarlosFuerte                                 | **0.561**  | Multilayer perceptron | Python      | [Notebook](CarlosFuerte/ML_Submission.ipynb) |
-| 12| [evgenizer](https://github.com/evgenizer)     | **0.561**  | Majority voting | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
-| 15 | [wouterk1MSS](https://github.com/wouterk1MSS) | **0.557**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
-| 16| [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
-| 17| [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
-| 18 | [JesperDramsch](https://github.com/JesperDramsch) | **0.530**  | Random forest | Python   | [Notebook](JesperDramsch/Facies_classification_Xmas_Trees-Copy1.ipynb) |
-| 19 | [CannedGeo](https://github.com/cannedgeo)    | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
-| 20 | [daghra](https://github.com/dagrha)          | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
-| 21 | SHandPR                                      | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
-| 22 | [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
+| 1 | HouMath                                       | **0.615**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_06.ipynb) |
+| 2 | [ar4](https://github.com/ar4)                 | **0.606**  | Random forest | Python   | [Notebook](ar4/ar4_submission2.ipynb) |
+| 3 | [bestagini](https://github.com/bestagini)     | **0.604**  | Random forest | Python   | [Notebook](ispl/facies_classification_try02.ipynb) |
+| 4 | Bird Team                                     | **0.598**<sup>1</sup>  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
+| 5 | geoLEARN                                      | **0.594**  | Random forest | Python   | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
+| 6 | [gccrowther](https://github.com/gccrowther)   | **0.589**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/05%20-%20Facies%20Determination.ipynb) |
+| 7 | [thanish](https://github.com/thanish)         | **0.580**  | Random forest | R        | [Code](Mendacium/Mendacium/rf_sub_10.R) |
+| 8 | MandMs                                        | **0.579**  | Majority voting | Python | [Notebook](MandMs/Facies_classification-M%26Ms_plurality_voting_classifier.ipynb) |
+| 9 | PA Team                                       | **0.573**  | Deep neural net  | Python   | [Notebook](PA_Team/PA_Team_Submission_0.ipynb) |
+| 10| [kr1m](https://github.com/kr1m)               | **0.570**  | AdaBoosted trees | Python   | [Notebook](Kr1m/Kr1m_SEG_ML_Attempt1.ipynb) |
+| 11| LA_Team                                       | **0.568**  | Deep neural net | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
+| 11| [fvf1361](https://github.com/fvf1361)         | **0.568**  | Majority voting | Python   | [Notebook](fvf/facies_classification.ipynb) |
+| 13| [gganssle](https://github.com/gganssle)       | **0.561**  | Deep neural net | Lua      | [Notebook](gram/faye.ipynb) |
+| 13 | CarlosFuerte                                 | **0.561**  | Multilayer perceptron | Python      | [Notebook](CarlosFuerte/ML_Submission.ipynb) |
+| 13| [evgenizer](https://github.com/evgenizer)     | **0.561**  | Majority voting | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
+| 16 | [wouterk1MSS](https://github.com/wouterk1MSS) | **0.557**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
+| 17| [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
+| 18| [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
+| 19| [JesperDramsch](https://github.com/JesperDramsch) | **0.530**  | Random forest | Python   | [Notebook](JesperDramsch/Facies_classification_Xmas_Trees-Copy1.ipynb) |
+| 20| [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
+| 21| [daghra](https://github.com/dagrha)           | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
+| 22| SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
+| 23| [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
 
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
 
