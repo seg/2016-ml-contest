@@ -23,6 +23,8 @@ play <- function() {
     for (well_i in wells) {
         crossCorrsi <- data.frame()
         train_i <- train[train$Well.Name == well_i,]
+        
+        # loop through arbitrary horizons in test well
         for (j in 1:floor(nrow(test)/l)) {
             
             top <- ((j-1) * l + 1)
