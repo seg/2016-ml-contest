@@ -40,9 +40,10 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 20| [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
 | 21| [daghra](https://github.com/dagrha)           | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
 | 22| SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
+| 22| BGC_Team                                      | **0.469**  | Support vector machine | Python   | [Notebook](BGC_Team/Facies%20Prediction_submit.ipynb) |
 | 23| [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
 
-<sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
+<!-- <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days. -->
 
 
 ## Getting started with Python
@@ -64,7 +65,8 @@ We've never done anything like this before, so there's a good chance these rules
 **IMPORTANT: When this contest was first published, we asked you to hold the SHANKLE well blind. This is no longer necessary. You can use all the published wells in your training. Related: I am removing the file of predicted facies for the STUART and CRAWFORD wells, to reduce confusion — they are not actual facies, only those predicted by Brendon's first model.**
 
 - You must submit your result as code and we must be able to run your code.
-- **Entries will be scored by a comparison against known facies in the STUART and CRAWFORD wells, which do not have labels in the contest dataset. We will use the F1 cross-validation score.** See [issue #2 regarding this point.](https://github.com/seg/2016-ml-contest/issues/2). The scores in the 'leaderboard' reflect this.
+- **Entries will be scored by a comparison against known facies in the STUART and CRAWFORD wells, which do not have labels in the contest dataset. We will use the F1 cross-validation score.** See [issue #2 regarding this point](https://github.com/seg/2016-ml-contest/issues/2). The scores in the 'leaderboard' reflect this.
+- Where there is stochastic variance in the predictions, the median average of 100 realizations will be used as the cross-validation score. See [issue #114 regarding this point](https://github.com/seg/2016-ml-contest/issues/114). The scores in the leaderboard **do not** currently reflect this. Probably only the top entries will be scored in this way. [updated 23 Jan]
 - The result we get with your code is the one that counts as your result.
 - To make it more likely that we can run it, your code must be written in Python or R or Julia **or Lua** [updated 26 Oct].
 - The contest is over at 23:59:59 UT (i.e. midnight in London, UK) on 31 January 2017. Pull requests made aftetr that time won't be eligible for the contest.
