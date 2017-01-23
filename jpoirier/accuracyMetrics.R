@@ -9,6 +9,8 @@ myF1Metric <- function(ypred, yobs) {
     microF1_score
 }
 
+# code below is by sunliangms - https://github.com/Azure/Azure-MachineLearning-DataScience/blob/master/Utilities/R/MultiClassEvaluation/multi_class_measure.R
+
 # This part is copied from classification_measure.R
 # It contains many functions to compute the performance metrics for both 
 # binary and multi-class classification. 
