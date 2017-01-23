@@ -40,8 +40,9 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 20| [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
 | 21| [daghra](https://github.com/dagrha)           | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
 | 22| SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
-| 22| BGC_Team                                      | **0.469**  | Support vector machine | Python   | [Notebook](BGC_Team/Facies%20Prediction_submit.ipynb) |
-| 23| [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
+| 23| BGC_Team                                      | **0.469**  | Support vector machine | Python   | [Notebook](BGC_Team/Facies%20Prediction_submit.ipynb) |
+| 23| jpoirier                                      | **0.469**  | Custom              | Python   | [Notebook](jpoirier/jpoirier009_submission001.ipynb) |
+| 24| [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
 
 <!-- <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days. -->
 
