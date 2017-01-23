@@ -10,10 +10,12 @@ loadData <- function() {
 cleanData <- function(data) {
     # convert NM_M channel into a binary channel "isMarine"
     data$NM_M <- data$NM_M == "2"
-    names(data)[10] <- "isMarine"
+    names(data)[which(names(data) == "NM_M")] <- "isMarine"
     
-    # make the Facies channel more descriptive
-    levels(data$Facies) <- c("SS", "CSiS", "FSiS", "SiSh", "MS", "WS", "D", "PS", "BS")
+    if ("Facies" %in% names(data)) {
+        # make the Facies channel more descriptive
+        levels(data$Facies) <- c("SS", "CSiS", "FSiS", "SiSh", "MS", "WS", "D", "PS", "BS")   
+    }
     
     data
 }
