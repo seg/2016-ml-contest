@@ -37,10 +37,10 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 17| [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
 | 18| [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
 | 19| [JesperDramsch](https://github.com/JesperDramsch) | **0.530**  | Random forest | Python   | [Notebook](JesperDramsch/Facies_classification_Xmas_Trees-Copy1.ipynb) |
+| 23| BGC_Team                                      | **0.519**  | DNN           | Python   | [Notebook](BGC_Team/Facies%20Prediction_submit.ipynb) |
 | 20| [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
 | 21| [daghra](https://github.com/dagrha)           | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
 | 22| SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
-| 23| BGC_Team                                      | **0.469**  | Support vector machine | Python   | [Notebook](BGC_Team/Facies%20Prediction_submit.ipynb) |
 | 23| jpoirier                                      | **0.469**  | Custom              | Python   | [Notebook](jpoirier/jpoirier009_submission001.ipynb) |
 | 24| [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
 
