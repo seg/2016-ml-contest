@@ -56,20 +56,20 @@ def cleanup_csv(data, standardize=True):
     return data
 
 
-def two_layer_network(all_data, sample_index, dropout=False):
+def two_layer_network(train_data, test_data, seed=None, dropout=False):
     # setup
     l_x = tf.placeholder(tf.float32, shape=[None, NUM_INPUTS])
-    features_T = tf.pack(all_data.values[:sample_index])
-    test_features_T = tf.pack(all_data.values[sample_index:])
+    features_T = tf.pack(train_data)
+    test_features_T = tf.pack(test_data)
 
     # layer sizes
     k = 25
     l = 15
 
     # Weights and biases
-    w1 = tf.Variable(tf.truncated_normal([NUM_INPUTS, k]))
-    w2 = tf.Variable(tf.truncated_normal([k, l]))
-    w3 = tf.Variable(tf.truncated_normal([l, NUM_FACIES]))
+    w1 = tf.Variable(tf.truncated_normal([NUM_INPUTS, k], seed=seed))
+    w2 = tf.Variable(tf.truncated_normal([k, l], seed=seed))
+    w3 = tf.Variable(tf.truncated_normal([l, NUM_FACIES], seed=seed))
 
     b1 = tf.Variable(tf.zeros([k]))
     b2 = tf.Variable(tf.zeros([l]))
@@ -116,9 +116,9 @@ def three_layer_network(train_data, test_data, seed=None, dropout=False):
         y1d = tf.nn.relu(tf.matmul(l_x, w1) + b1)
         y1 = tf.nn.dropout(y1d, 0.9)
         y2d = tf.nn.relu(tf.matmul(y1, w2) + b2)
-        # y2 = tf.nn.dropout(y2d, 0.95)
-        y3d = tf.nn.relu(tf.matmul(y2d, w3) + b3)
-        y3 = tf.nn.dropout(y3d, 0.95)
+        y2 = tf.nn.dropout(y2d, 0.95)
+        y3 = tf.nn.relu(tf.matmul(y2, w3) + b3)
+        #y3 = tf.nn.dropout(y3d, 0.95)
     else:
         y1 = tf.nn.relu(tf.matmul(l_x, w1) + b1)
         y2 = tf.nn.relu(tf.matmul(y1, w2) + b2)

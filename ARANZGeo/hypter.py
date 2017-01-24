@@ -4,7 +4,7 @@ import classification_utilities
 from networks_setups import *
 from sklearn.metrics import confusion_matrix
 
-filename = 'training_data.csv'
+#filename = 'training_data.csv'
 testname = 'facies_vectors.csv'
 
 facies_labels = ['SS', 'CSiS', 'FSiS', 'SiSh', 'MS', 'WS', 'D', 'PS', 'BS']
@@ -26,7 +26,7 @@ def train_iteration(base_data, rand_index, sess, seed=1, print_epoch=False, iter
 
     test_labels_T = tf.convert_to_tensor(hot_vals)
 
-    labels_w_noise, base_data = add_input_noise_from_facies(base_data, adjacent_facies, train_indices, noise_pecentage=0.0, seed=seed)
+    labels_w_noise, base_data = add_input_noise_from_facies(base_data, adjacent_facies, train_indices, seed=seed)
     labels_T = tf.convert_to_tensor(labels_w_noise)
 
     all_data = cleanup_csv(base_data)
@@ -37,7 +37,7 @@ def train_iteration(base_data, rand_index, sess, seed=1, print_epoch=False, iter
     # network setup
     y, x, features_T, test_features_T = three_layer_network(all_data.values[train_indices],
                                                             all_data.values[test_indices],
-                                                            seed=seed, dropout=False)
+                                                            seed=seed, dropout=True)
 
     # loss function used to train
     cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(y, y_))
@@ -93,12 +93,10 @@ def train_iteration(base_data, rand_index, sess, seed=1, print_epoch=False, iter
 
 
 # We are using a weighted majority stacking
-seeds = [10, 4, 127, 13, 12, 5, 9]
+seeds = [10, 4, 12]
 sess = tf.Session()
 
-training_data = pd.read_csv(filename)
-test_data = pd.read_csv(testname)
-base_data = test_data.append(training_data)
+base_data = pd.read_csv(testname)
 
 validation = 'validation_data_nofacies.csv'
 validation_data = pd.read_csv(validation)
@@ -110,7 +108,7 @@ final_predictions = None
 for seed in seeds:
     np.random.seed(seed)
     rand_index = np.random.permutation(np.arange(base_data.shape[0]))
-    final_t, test_t, real_test_labels, F1, p_t, real_label = train_iteration(base_data, rand_index, sess, seed, False, 15000)
+    final_t, test_t, real_test_labels, F1, p_t, real_label = train_iteration(base_data, rand_index, sess, seed, True, 20000)
 
     facies = np.argmax(test_t, axis=1)
     facies_r = np.argmax(p_t, axis=1)
