@@ -20,8 +20,8 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 
 |   | Team                                          | F1         | Algorithm     | Language | Solution                 |
 |:-:|-----------------------------------------------|:----------:|---------------|----------|--------------------------|
-| 1 | HouMath                                       | **0.630**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_06.ipynb) |
-| 2 | SHandPR                                       | **0.623**<sup>1</sup>  | Boosted trees | Python   | [Notebook](SHandPR/Face_classification_SHPR_GradientBoost.ipynb) |
+| 1 | SHandPR                                       | **0.631**  | Boosted trees | Python   | [Notebook](SHandPR/Face_classification_SHPR_GradientBoost.ipynb) |
+| 2 | HouMath                                       | **0.630**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_06.ipynb) |
 | 3 | [ar4](https://github.com/ar4)                 | **0.606**  | Random forest | Python   | [Notebook](ar4/ar4_submission2.ipynb) |
 | 4 | [bestagini](https://github.com/bestagini)     | **0.604**  | Random forest | Python   | [Notebook](ispl/facies_classification_try02.ipynb) |
 | 5 | Bird Team                                     | **0.598**<sup>1</sup>  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
