@@ -21,7 +21,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 1 | HouMath                                       | **0.630**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_06.ipynb) |
 | 2 | [ar4](https://github.com/ar4)                 | **0.606**  | Random forest | Python   | [Notebook](ar4/ar4_submission2.ipynb) |
 | 3 | [bestagini](https://github.com/bestagini)     | **0.604**  | Random forest | Python   | [Notebook](ispl/facies_classification_try02.ipynb) |
-| 4 | Bird Team                                     | **0.598**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
+| 4 | Bird Team                                     | **0.598**<sup>1</sup>  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
 | 5 | geoLEARN                                      | **0.594**  | Random forest | Python   | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
 | 6 | [gccrowther](https://github.com/gccrowther)   | **0.589**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/05%20-%20Facies%20Determination.ipynb) |
 | 7 | [thanish](https://github.com/thanish)         | **0.580**  | Random forest | R        | [Code](Mendacium/Mendacium/rf_sub_10.R) |
@@ -37,14 +37,15 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 17| [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
 | 18| [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
 | 19| [JesperDramsch](https://github.com/JesperDramsch) | **0.530**  | Random forest | Python   | [Notebook](JesperDramsch/Facies_classification_Xmas_Trees-Copy1.ipynb) |
-| 23| BGC_Team                                      | **0.519**  | DNN           | Python   | [Notebook](BGC_Team/Facies%20Prediction_submit.ipynb) |
-| 20| [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
-| 21| [daghra](https://github.com/dagrha)           | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
-| 22| SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
-| 23| jpoirier                                      | **0.469**  | Custom              | Python   | [Notebook](jpoirier/jpoirier009_submission001.ipynb) |
-| 24| [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
+| 20| BGC_Team                                      | **0.519**  | DNN           | Python   | [Notebook](BGC_Team/Facies%20Prediction_submit.ipynb) |
+| 21| [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
+| 22| ARANZGeo                                      | **0.511**  | DNN | Python   | [Code](ARANZGeo/hypter.py) |
+| 23| [daghra](https://github.com/dagrha)           | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
+| 24| SHandPR                                       | **0.484**  | Logistic regression | Python   | [Notebook](SHandPR/FaciesTrial.ipynb) |
+| 25| jpoirier                                      | **0.469**  | Custom              | Python   | [Notebook](jpoirier/jpoirier009_submission001.ipynb) |
+| 26| [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
 
-<!-- <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days. -->
+<sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
 
 
 ## Getting started with Python
