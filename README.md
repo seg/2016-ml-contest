@@ -34,7 +34,6 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 |   | PA Team                                       | **0.573**  | Deep neural net  | Python   | [Notebook](PA_Team/PA_Team_Submission_0.ipynb) |
 |   | [kr1m](https://github.com/kr1m)               | **0.570**  | AdaBoosted trees | Python   | [Notebook](Kr1m/Kr1m_SEG_ML_Attempt1.ipynb) |
 |   | [ShiangYong](https://github.com/ShiangYong)   | **0.570**  | ConvNet          | Python   | [Notebook](ShiangYong/facies_classification_cnn.ipynb) |
-|   | LA_Team                                       | **0.568**  | Deep neural net | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_03.ipynb) |
 |   | [fvf1361](https://github.com/fvf1361)         | **0.568**  | Majority voting | Python   | [Notebook](fvf/facies_classification.ipynb) |
 |   | [gganssle](https://github.com/gganssle)       | **0.561**  | Deep neural net | Lua      | [Notebook](gram/faye.ipynb) |
 |   | CarlosFuerte                                 | **0.561**  | Multilayer perceptron | Python      | [Notebook](CarlosFuerte/ML_Submission.ipynb) |
