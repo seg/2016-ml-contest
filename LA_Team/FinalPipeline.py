@@ -1,9 +1,10 @@
 import numpy as np
 
-from sklearn.ensemble import ExtraTreesClassifier, RandomForestClassifier, VotingClassifier
+from sklearn.ensemble import RandomForestClassifier, VotingClassifier
 from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import BernoulliNB
 from sklearn.pipeline import make_pipeline, make_union
-from sklearn.preprocessing import FunctionTransformer, MaxAbsScaler
+from sklearn.preprocessing import FunctionTransformer
 
 # NOTE: Make sure that the class is labeled 'class' in the data file
 tpot_data = np.recfromcsv('PATH/TO/DATA/FILE', delimiter='COLUMN_SEPARATOR', dtype=np.float64)
@@ -12,9 +13,8 @@ training_features, testing_features, training_classes, testing_classes = \
     train_test_split(features, tpot_data['class'], random_state=42)
 
 exported_pipeline = make_pipeline(
-    MaxAbsScaler(),
-    make_union(VotingClassifier([("est", RandomForestClassifier(n_estimators=500))]), FunctionTransformer(lambda X: X)),
-    ExtraTreesClassifier(criterion="entropy", max_features=0.0001, n_estimators=500)
+    make_union(VotingClassifier([("est", BernoulliNB(alpha=60.0, binarize=0.26, fit_prior=True))]), FunctionTransformer(lambda X: X)),
+    RandomForestClassifier(n_estimators=500)
 )
 
 exported_pipeline.fit(training_features, training_classes)
