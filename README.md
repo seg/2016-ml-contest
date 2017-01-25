@@ -37,6 +37,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 |   | CarlosFuerte                                 | **0.561**  | Multilayer perceptron | Python      | [Notebook](CarlosFuerte/ML_Submission.ipynb) |
 |   | [evgenizer](https://github.com/evgenizer)     | **0.561**  | Majority voting | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
 |   | [wouterk1MSS](https://github.com/wouterk1MSS) | **0.557**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
+|   | [CarthyCraft](https://github.com/CarthyCraft) | **0.552**  | Boosted trees | Python | [Notebook](ADMC/McCarthy%202016%20ML%20v2.0.ipynb) |
 |   | [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
 |   | [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
 |   | [JesperDramsch](https://github.com/JesperDramsch) | **0.530**  | Random forest | Python   | [Notebook](JesperDramsch/Facies_classification_Xmas_Trees-Copy1.ipynb) |
