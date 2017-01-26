@@ -43,6 +43,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 |   | [CarthyCraft](https://github.com/CarthyCraft) | **0.552**  | Boosted trees | Python | [Notebook](ADMC/McCarthy%202016%20ML%20v2.0.ipynb) |
 |   | [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
 |   | [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
+|   | [rkappius](https://github.com/rkappius)       | **0.534**  | ANN           | Python   | [Notebook](rkappius/facies_w_tf_submit.py) |
 |   | [JesperDramsch](https://github.com/JesperDramsch) | **0.530**  | Random forest | Python   | [Notebook](JesperDramsch/Facies_classification_Xmas_Trees-Copy1.ipynb) |
 |   | BGC_Team                                      | **0.519**  | DNN           | Python   | [Notebook](BGC_Team/Facies%20Prediction_submit.ipynb) |
 |   | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
