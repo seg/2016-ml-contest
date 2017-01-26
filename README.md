@@ -20,11 +20,11 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 
 |   | Team                                          | F1         | Algorithm     | Language | Solution                 |
 |:-:|-----------------------------------------------|:----------:|---------------|----------|--------------------------|
-| 5 | LA_Team                                       | **0.641**<sup>1</sup>  | Boosted trees | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_05.ipynb) |
-| 1 | SHandPR                                       | **0.631**  | Boosted trees | Python   | [Notebook](SHandPR/Face_classification_SHPR_GradientBoost.ipynb) |
-| 2 | HouMath                                       | **0.630**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_06.ipynb) |
-| 3 | [ar4](https://github.com/ar4)                 | **0.606**  | Random forest | Python   | [Notebook](ar4/ar4_submission2.ipynb) |
-| 4 | [bestagini](https://github.com/bestagini)     | **0.604**  | Random forest | Python   | [Notebook](ispl/facies_classification_try02.ipynb) |
+| 1 | LA_Team                                       | **0.641**<sup>1</sup>  | Boosted trees | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_05.ipynb) |
+| 2 | SHandPR                                       | **0.631**  | Boosted trees | Python   | [Notebook](SHandPR/Face_classification_SHPR_GradientBoost.ipynb) |
+| 3 | HouMath                                       | **0.630**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_06.ipynb) |
+| 4 | [ar4](https://github.com/ar4)                 | **0.606**  | Random forest | Python   | [Notebook](ar4/ar4_submission2.ipynb) |
+| 5 | [bestagini](https://github.com/bestagini)     | **0.604**  | Random forest | Python   | [Notebook](ispl/facies_classification_try02.ipynb) |
 | 6 | Bird Team                                     | **0.598**<sup>1</sup>  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
 | 7 | geoLEARN                                      | **0.594**  | Random forest | Python   | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
 | 8 | [gccrowther](https://github.com/gccrowther)   | **0.589**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/05%20-%20Facies%20Determination.ipynb) |
