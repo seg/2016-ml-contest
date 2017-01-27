@@ -51,7 +51,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 |   | [daghra](https://github.com/dagrha)           | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
 |   | StoDIG                                      | **0.500**  | ConvNet              | Python   | [Notebook](StoDIG/Facies_classification_StoDIG.ipynb) |
 |   | jpoirier                                      | **0.469**  | Custom              | Python   | [Notebook](jpoirier/jpoirier009_submission001.ipynb) |
-|   | [BrendonHall](https://github.com/brendonhall) | **0.412**  | Support vector machine | Python   | Initial score in article |
+|   | [BrendonHall](https://github.com/brendonhall) | **0.427**  | Support vector machine | Python   | Initial score in article |
 |   | [Houston_J](https://github.com/Houston_J) | **0.401**  | Support vector machine | Python   | [Notebook](Houston_J/Houston_J-sub1.ipynb) |
 
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
