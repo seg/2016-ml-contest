@@ -39,8 +39,8 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 |   | [gganssle](https://github.com/gganssle)       | **0.561**  | Deep neural net | Lua      | [Notebook](gram/faye.ipynb) |
 |   | CarlosFuerte                                 | **0.561**  | Multilayer perceptron | Python      | [Notebook](CarlosFuerte/ML_Submission.ipynb) |
 |   | [evgenizer](https://github.com/evgenizer)     | **0.561**  | Majority voting | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
+|   | [CarthyCraft](https://github.com/CarthyCraft) | **0.561**  | Boosted trees | Python | No code yet |
 |   | [wouterk1MSS](https://github.com/wouterk1MSS) | **0.559**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
-|   | [CarthyCraft](https://github.com/CarthyCraft) | **0.552**  | Boosted trees | Python | [Notebook](ADMC/McCarthy%202016%20ML%20v2.0.ipynb) |
 |   | [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
 |   | [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
 |   | [rkappius](https://github.com/rkappius)       | **0.534**  | ANN           | Python   | [Notebook](rkappius/facies_w_tf_submit.py) |
