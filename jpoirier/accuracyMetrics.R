@@ -1,3 +1,19 @@
+myF1MetricCaret <- function(data, lev=NULL, model=NULL) {
+    
+    if (sum(is.na(data$pred)) == nrow(data)) {
+        out <- c(0)
+        names(out) <- c("F1")
+    } else {
+        ConfM <- confusion_multi(data$obs, data$pred)
+        M <- ConfM$confusionMatrix
+        out <- c(microF1(M))
+        names(out) <- c("F1")        
+    }
+
+    
+    out
+}
+
 myF1Metric <- function(ypred, yobs) {
     ConfM <- confusion_multi(yobs, ypred)
     M <- ConfM$confusionMatrix
