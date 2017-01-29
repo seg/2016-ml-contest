@@ -30,6 +30,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | 8 | geoLEARN                                      | **0.594**  | Random forest | Python   | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
 | 9 | [gccrowther](https://github.com/gccrowther)   | **0.589**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/05%20-%20Facies%20Determination.ipynb) |
 | 10| PA Team                                       | **0.585**  | Deep neural net  | Python   | [Notebook](PA_Team/PA_Team_Submission_2.ipynb) |
+|   | [Houston_J](https://github.com/Houston_J)     | **0.584**  | Boosted trees | Python   | [Notebook](Houston_J/Houston_J-sub2.ipynb) |
 |   | [thanish](https://github.com/thanish)         | **0.580**  | Random forest | R        | [Code](Mendacium/Mendacium/rf_sub_10.R) |
 |   | MandMs                                        | **0.579**  | Majority voting | Python | [Notebook](MandMs/Facies_classification-M%26Ms_plurality_voting_classifier.ipynb) |
 |   | PA Team                                       | **0.573**  | Deep neural net  | Python   | [Notebook](PA_Team/PA_Team_Submission_0.ipynb) |
@@ -52,7 +53,6 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 |   | StoDIG                                      | **0.500**  | ConvNet              | Python   | [Notebook](StoDIG/Facies_classification_StoDIG.ipynb) |
 |   | jpoirier                                      | **0.469**  | Custom              | Python   | [Notebook](jpoirier/jpoirier009_submission001.ipynb) |
 |   | [BrendonHall](https://github.com/brendonhall) | **0.427**  | Support vector machine | Python   | Initial score in article |
-|   | [Houston_J](https://github.com/Houston_J) | **0.401**  | Support vector machine | Python   | [Notebook](Houston_J/Houston_J-sub1.ipynb) |
 
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
 
