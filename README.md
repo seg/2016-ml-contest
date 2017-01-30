@@ -52,7 +52,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 |   | ARANZGeo                                      | **0.511**  | Deep nerual network  | Python   | [Code](ARANZGeo/hypter.py) |
 |   | [daghra](https://github.com/dagrha)           | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
 |   | [cako](https://github.com/cako)           | **0.505**  | Multi-layer perceptron  | Python   | [Notebook](DiscerningHaggis/Discerning_Haggis_Facies_Classification.ipynb) |
-|   | jpoirier                                      | **0.469**  | Custom              | Python   | [Notebook](jpoirier/jpoirier009_submission001.ipynb) |
+|   | jpoirier                                      | **0.502**  | Random forest              | Python   | [Notebook](jpoirier/jpoirier008_submission001.ipynb) |
 |   | [BrendonHall](https://github.com/brendonhall) | **0.427**  | Support vector machine | Python   | Initial score in article |
 
 <sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
