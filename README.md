@@ -43,8 +43,8 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | [CarthyCraft](https://github.com/CarthyCraft) | **0.561**  | Boosted trees | Python | No code yet |
 | [wouterk1MSS](https://github.com/wouterk1MSS) | **0.559**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
 | [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
+| StoDIG                                        | **0.550**  | ConvNet              | Python   | [Notebook](StoDIG/Facies_classification_StoDIG_3.ipynb) |
 | [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
-| StoDIG                                        | **0.547**  | ConvNet              | Python   | [Notebook](StoDIG/Facies_classification_StoDIG_2.ipynb) |
 | [rkappius](https://github.com/rkappius)       | **0.534**  | Neural network           | Python   | [Notebook](rkappius/facies_w_tf_submit.py) |
 | [JesperDramsch](https://github.com/JesperDramsch) | **0.530**  | Random forest | Python   | [Notebook](JesperDramsch/Facies_classification_Xmas_Trees-Copy1.ipynb) |
 | BGC_Team                                      | **0.519**  | Deep neural network  | Python   | [Notebook](BGC_Team/Facies%20Prediction_submit.ipynb) |
