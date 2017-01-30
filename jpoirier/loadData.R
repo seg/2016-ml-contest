@@ -12,6 +12,10 @@ cleanData <- function(data) {
     data$NM_M <- data$NM_M == "2"
     names(data)[which(names(data) == "NM_M")] <- "isMarine"
     
+    # add NPHI and DPHI features by computing from DeltaPHI and PHIND
+    data$NPHI <- as.numeric(data$PHIND + (data$DeltaPHI / 2))
+    data$DPHI <- as.numeric(data$PHIND - (data$DeltaPHI / 2))
+    
     if ("Facies" %in% names(data)) {
         # make the Facies channel more descriptive
         levels(data$Facies) <- c("SS", "CSiS", "FSiS", "SiSh", "MS", "WS", "D", "PS", "BS")   

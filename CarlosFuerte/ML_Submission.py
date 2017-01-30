@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 # # Machine Learning Contest
@@ -80,28 +79,46 @@ scaled_features = scaler.transform(feature_vectors)
 X_train, X_test, y_train, y_test = train_test_split(
         scaled_features, correct_facies_labels, test_size=0.2, random_state=42)
 
+#%% Use tpot
+from tpot import TPOTClassifier
+from sklearn.pipeline import make_pipeline, make_union
+from sklearn.ensemble import ExtraTreesClassifier, VotingClassifier
+
+#tpot = TPOTClassifier(generations=5, population_size=20, verbosity=2, 
+#                      max_eval_time_mins = 20, max_time_mins=100, scoring='f1_micro')
+#tpot.fit(X_train, y_train)
+#print(tpot.score(X_test, y_test))
+#tpot.export('tpot_mnist_pipeline.py')
+
 # In[4]:
+#
+#from sklearn.neural_network import MLPClassifier
+#
+#sizes = (200,100,100)
+#clfNN = MLPClassifier(solver='lbfgs', alpha=.015,
+#                    hidden_layer_sizes=sizes, random_state=15)
+#clfOne = OneVsRestClassifier(MLPClassifier(solver='lbfgs', alpha=.015,
+#                    hidden_layer_sizes=sizes, random_state=15), n_jobs = -1)
+#
+#clfNN.fit(X_train,y_train)
+#clfOne.fit(X_train,y_train)
+#
+#predicted_NN     = clfNN.predict(X_test)
+#predicted_One    = clfOne.predict(X_test)
+#%% Use TPOT to find best parameters/models
+clfExtra = make_pipeline(
+    ExtraTreesClassifier(criterion="gini", max_features=0.53, n_estimators=500))
+clfExtra.fit(X_train, y_train)
 
-from sklearn.neural_network import MLPClassifier
+predicted = clfExtra.predict(X_test)
 
-sizes = (200,100,100)
-clfNN = MLPClassifier(solver='lbfgs', alpha=.015,
-                    hidden_layer_sizes=sizes, random_state=15)
-clfOne = OneVsRestClassifier(MLPClassifier(solver='lbfgs', alpha=.015,
-                    hidden_layer_sizes=sizes, random_state=15), n_jobs = -1)
 
-clfNN.fit(X_train,y_train)
-clfOne.fit(X_train,y_train)
-
-predicted_NN     = clfNN.predict(X_test)
-predicted_One    = clfOne.predict(X_test)
-
+#%%
 from sklearn.metrics import confusion_matrix
 from classification_utilities import display_cm, display_adj_cm
 
-conf_NN  = confusion_matrix(y_test,predicted_NN)
-conf_One = confusion_matrix(y_test,predicted_One) 
-display_cm(conf_NN,facies_labels,hide_zeros=True)
+conf = confusion_matrix(y_test,predicted) 
+display_cm(conf,facies_labels,hide_zeros=True)
 
 
 def accuracy(conf):
@@ -124,19 +141,17 @@ def accuracy_adjacent(conf, adjacent_facies):
             total_correct += conf[i][j]
     return total_correct / sum(sum(conf))
 
-print('Facies classification accuracy (NN) = %f' % accuracy(conf_NN))
-print('Facies classification accuracy (OneVsRest) = %f' % accuracy(conf_One))
-print('Adjacent facies classification accuracy (NN) = %f' % accuracy_adjacent(conf_NN, adjacent_facies))
-print('Adjacent facies classification accuracy (OneVsRest) = %f' % accuracy_adjacent(conf_One, adjacent_facies))
+from sklearn.metrics import f1_score, make_scorer
+fscorer_micro =  make_scorer(f1_score, average = 'micro')
+fscorer_micro =  make_scorer(f1_score, average = 'macro')
+
+print('Facies classification accuracy = %f' % accuracy(conf))
+print('Adjacent facies classification accuracy = %f' % accuracy_adjacent(conf, adjacent_facies))
 
 # ## Load Validation Set
 
 #%% Retrain on whole dataset
-clf_final = OneVsRestClassifier(MLPClassifier(solver='lbfgs', alpha=.015,
-                    hidden_layer_sizes=sizes, random_state=1),n_jobs = -1)
-
-clf_final.fit(scaled_features,correct_facies_labels)
-
+clfExtra.fit(scaled_features, correct_facies_labels)
     
 #%%
 filename = 'validation_data_nofacies.csv'
@@ -148,7 +163,8 @@ for ii, formation in enumerate(feature_vectors['Formation'].unique()):
 validation = validationFull.drop(['Formation', 'Well Name'], axis = 1)    
 # Normalize data
 scaled_validation = scaler.transform(validation)
-validation_output = clf_final.predict(scaled_validation)
+validation_output = clfExtra.predict(scaled_validation)
+#validation_output = clf_final.predict(scaled_validation)
 
 
 # In[6]:
