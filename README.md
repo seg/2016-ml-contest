@@ -35,12 +35,12 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | MandMs                                        | **0.579**  | Majority voting | Python | [Notebook](MandMs/Facies_classification-M%26Ms_plurality_voting_classifier.ipynb) |
 | jpoirier                                      | **0.574**  | Random forest    | Python   | [Notebook](jpoirier/jpoirier011_submission001.ipynb) |
 | PA Team                                       | **0.573**  | Deep neural net  | Python   | [Notebook](PA_Team/PA_Team_Submission_0.ipynb) |
+| [evgenizer](https://github.com/evgenizer)     | **0.573**  | Majority voting | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
 | [kr1m](https://github.com/kr1m)               | **0.570**  | AdaBoosted trees | Python   | [Notebook](Kr1m/Kr1m_SEG_ML_Attempt1.ipynb) |
 | [ShiangYong](https://github.com/ShiangYong)   | **0.570**  | ConvNet          | Python   | [Notebook](ShiangYong/facies_classification_cnn.ipynb) |
 | CarlosFuerte                                  | **0.570**  | Multilayer perceptron | Python      | [Notebook](CarlosFuerte/ML_Submission.ipynb) |
 | [fvf1361](https://github.com/fvf1361)         | **0.568**  | Majority voting | Python   | [Notebook](fvf/facies_classification.ipynb) |
 | [gganssle](https://github.com/gganssle)       | **0.561**  | Deep neural net | Lua      | [Notebook](gram/faye.ipynb) |
-| [evgenizer](https://github.com/evgenizer)     | **0.561**  | Majority voting | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
 | [CarthyCraft](https://github.com/CarthyCraft) | **0.561**  | Boosted trees | Python | No code yet |
 | [wouterk1MSS](https://github.com/wouterk1MSS) | **0.559**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
 | [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
