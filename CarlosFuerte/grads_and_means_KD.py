@@ -130,7 +130,7 @@ well = training_data['Well Name'].values
 #sizes_grid = [(100, 100), (200, 200), (200, 200, 100)]
 
 alpha_grid = [0.015]  
-solver_grid = ['lbfgs']  
+solver_grid = ['sgd']  
 sizes_grid = [(100, 100)]
 param_grid = []
 for alpha in alpha_grid:
