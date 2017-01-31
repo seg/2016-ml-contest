@@ -88,3 +88,11 @@ ENV/
 # Rope project settings
 .ropeproject
 SHandPR/FaciesTrialKNearestNeighbour.ipynb
+
+# saved R objects
+*.rds
+
+# R workspace
+.RData
+*.Rproj*
+.Rhistory
