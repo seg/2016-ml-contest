@@ -71,7 +71,6 @@ feature_vectors = feature_vectors.drop(['Formation'], axis = 1)
 
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
-from sklearn.multiclass import OneVsOneClassifier, OneVsRestClassifier
 
 scaler = preprocessing.StandardScaler().fit(feature_vectors)
 scaled_features = scaler.transform(feature_vectors)
