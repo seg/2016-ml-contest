@@ -118,7 +118,7 @@ validation = validationFull.drop(['Formation', 'Well Name'], axis=1)
 
 X = feature_vectors.values
 y = correct_facies_labels
-well = training_data['Well Name']
+well = training_data['Well Name'].values
 # ***
 # Normalizing and splitting data
 
@@ -178,12 +178,14 @@ def train_and_test(X_tr, y_tr, X_v, well_v, param):
 
     clf.fit(X_tr, y_tr)
     
-    # MAke prediction
+    # Make prediction
     y_v_hat = clf.predict(X_v)
+
     
     # Perform median filter to smooth results
     for w in np.unique(well_v):
         y_v_hat[well_v == w] = medfilt(y_v_hat[well_v == w], kernel_size=5)
+
     
     return y_v_hat
 # In[82]:
@@ -230,7 +232,7 @@ print('\nBest F1 score = %.3f %s' % (score_best, param_best))
 
 # In[83]:
 X_v = validation.values
-well_v = validationFull['Well Name']
+well_v = validationFull['Well Name'].values
 param = param_grid[best_idx]
 validation_output = train_and_test(X, y, X_v, well_v, param)
 validationFull['Facies'] = validation_output
