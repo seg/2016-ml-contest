@@ -48,6 +48,7 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | [wouterk1MSS](https://github.com/wouterk1MSS) | **0.559**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
 | [Anjum48](https://github.com/Anjum48)         | **0.559**  | Majority voting | Python   | [Notebook](Anjum48/Anjum48%20Facies%20Classification%20v2.ipynb) |
 | itwm                                          | **0.557**  | ConvNet | Python   | [Notebook](itwm/Facies_classification_ITWM_01.ipynb) |
+| [JJlowe](https://github.com/JJlowe)           | **0.556**  | Deep neural network | Python   | [Notebook](JLOWE/JLowe_NN.ipynb) |
 | [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
 | [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
 | [rkappius](https://github.com/rkappius)       | **0.534**  | Neural network           | Python   | [Notebook](rkappius/facies_w_tf_submit.py) |
