@@ -93,6 +93,6 @@ SHandPR/FaciesTrialKNearestNeighbour.ipynb
 *.rds
 
 # R workspace
-*.RData
-*.Rproj
-*.Rhistory
+.RData
+*.Rproj*
+.Rhistory
