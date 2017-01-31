@@ -20,14 +20,14 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 
 | Team                                          | F1         | Algorithm     | Language | Solution                 |
 |-----------------------------------------------|:----------:|---------------|----------|--------------------------|
-| LA_Team                                       | **0.641**<sup>1</sup>  | Boosted trees | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_05.ipynb) |
+| LA_Team                                       | **0.641**  | Boosted trees | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_05.ipynb) |
 | SHandPR                                       | **0.631**  | Boosted trees | Python   | [Notebook](SHandPR/Face_classification_SHPR_GradientBoost.ipynb) |
 | [bestagini](https://github.com/bestagini)     | **0.631**  | Boosted trees | Python   | [Notebook](ispl/facies_classification_try03.ipynb) |
 | HouMath                                       | **0.630**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_06.ipynb) |
-| [esaTeam](https://github.com/esa-as)          | **0.626**<sup>1</sup>  | Boosted trees | Python   | [Notebook](esaTeam/esa_Submission01.ipynb) |
+| [esaTeam](https://github.com/esa-as)          | **0.626**  | Boosted trees | Python   | [Notebook](esaTeam/esa_Submission01.ipynb) |
 | [ar4](https://github.com/ar4)                 | **0.606**  | Random forest | Python   | [Notebook](ar4/ar4_submission2.ipynb) |
 | [Houston_J](https://github.com/Houston_J)     | **0.600**  | Boosted trees | Python   | [Notebook](Houston_J/Houston_J-sub2.ipynb) |
-| Bird Team                                     | **0.598**<sup>1</sup>  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
+| Bird Team                                     | **0.598**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
 | PA Team                                       | **0.596**  | Random forest | Python   | [Notebook](PA_Team/PA_Team_Submission_6_RF00.ipynb) |
 | geoLEARN                                      | **0.594**  | Random forest | Python   | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
 | [gccrowther](https://github.com/gccrowther)   | **0.589**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/05%20-%20Facies%20Determination.ipynb) |
@@ -54,8 +54,6 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | [daghra](https://github.com/dagrha)           | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
 | [cako](https://github.com/cako)               | **0.505**  | Multi-layer perceptron  | Python   | [Notebook](DiscerningHaggis/Discerning_Haggis_Facies_Classification.ipynb) |
 | [BrendonHall](https://github.com/brendonhall) | **0.427**  | Support vector machine | Python   | Initial score in article |
-
-<sup>1</sup>&nbsp;Pending complete validation. This usually takes us a few days.
 
 
 ## Getting started with Python
