@@ -40,8 +40,8 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | [ShiangYong](https://github.com/ShiangYong)   | **0.570**  | ConvNet          | Python   | [Notebook](ShiangYong/facies_classification_cnn.ipynb) |
 | CarlosFuerte                                  | **0.570**  | Multilayer perceptron | Python      | [Notebook](CarlosFuerte/ML_Submission.ipynb) |
 | [fvf1361](https://github.com/fvf1361)         | **0.568**  | Majority voting | Python   | [Notebook](fvf/facies_classification.ipynb) |
+| [CarthyCraft](https://github.com/CarthyCraft) | **0.566**  | Boosted trees | Python | [Notebook](ADMC/McCarthy%202016%20ML%20v17.ipynb)|
 | [gganssle](https://github.com/gganssle)       | **0.561**  | Deep neural net | Lua      | [Notebook](gram/faye.ipynb) |
-| [CarthyCraft](https://github.com/CarthyCraft) | **0.561**  | Boosted trees | Python | No code yet |
 | StoDIG                                        | **0.561**  | ConvNet              | Python   | [Notebook](StoDIG/Facies_classification_StoDIG_4.ipynb) |
 | [wouterk1MSS](https://github.com/wouterk1MSS) | **0.559**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
 | [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
