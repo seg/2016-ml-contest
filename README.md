@@ -22,10 +22,10 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 |-----------------------------------------------|:----------:|---------------|----------|--------------------------|
 | LA_Team                                       | **0.641**<sup>1</sup>  | Boosted trees | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_05.ipynb) |
 | SHandPR                                       | **0.631**  | Boosted trees | Python   | [Notebook](SHandPR/Face_classification_SHPR_GradientBoost.ipynb) |
+| [bestagini](https://github.com/bestagini)     | **0.631**  | Boosted trees | Python   | [Notebook](ispl/facies_classification_try03.ipynb) |
 | HouMath                                       | **0.630**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_06.ipynb) |
 | [esaTeam](https://github.com/esa-as)          | **0.626**<sup>1</sup>  | Boosted trees | Python   | [Notebook](esaTeam/esa_Submission01.ipynb) |
 | [ar4](https://github.com/ar4)                 | **0.606**  | Random forest | Python   | [Notebook](ar4/ar4_submission2.ipynb) |
-| [bestagini](https://github.com/bestagini)     | **0.604**  | Random forest | Python   | [Notebook](ispl/facies_classification_try02.ipynb) |
 | [Houston_J](https://github.com/Houston_J)     | **0.600**  | Boosted trees | Python   | [Notebook](Houston_J/Houston_J-sub2.ipynb) |
 | Bird Team                                     | **0.598**<sup>1</sup>  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
 | PA Team                                       | **0.596**  | Random forest | Python   | [Notebook](PA_Team/PA_Team_Submission_6_RF00.ipynb) |
