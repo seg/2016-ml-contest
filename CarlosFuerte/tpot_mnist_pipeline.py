@@ -12,7 +12,7 @@ training_features, testing_features, training_classes, testing_classes = \
     train_test_split(features, tpot_data['class'], random_state=42)
 
 exported_pipeline = make_pipeline(
-    ExtraTreesClassifier(criterion="gini", max_features=0.53, n_estimators=500)
+    ExtraTreesClassifier(criterion="gini", max_features=0.47000000000000003, n_estimators=500)
 )
 
 exported_pipeline.fit(training_features, training_classes)
