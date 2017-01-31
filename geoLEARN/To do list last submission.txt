@@ -1,6 +1,0 @@
-- change the weighting of the classes (same influence for each class, blanced, ...) or use SMOTE to increase the size of less-populated classes
-- add or remove engineered features by looking at what others have done.
-- one vs all
-- compare well tuned RF, Gradient Boosting and Extremely Randomized Trees
-- add a second layer of classification using the predict_proba: take the classification with high probability as good and try to reclassify the others with new variables: probability for each class, distance to other classes (from high proba classification)...
-- replace missing values with RF prediction for PE
