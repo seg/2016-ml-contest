@@ -69,50 +69,50 @@ training_data.loc[:,'FaciesLabels'] = training_data.apply(
 correct_facies_labels = training_data['Facies'].values
 
 
-#dfs = []
-#for well in training_data['Well Name'].unique():
-#    df = training_data[training_data['Well Name']==well].copy(deep=True)
-#    df.sort_values('Depth', inplace=True)
-#    for col in ['PE', 'GR', 'PHIND', 'ILD_log10', 'DeltaPHI']:
-#        # Rolling averages
-#        rollavg_col = 'rollavg_' + col
-#        df[rollavg_col] = df[col].rolling(window=10, center=False).mean()
-#        df[rollavg_col].fillna(method='ffill', inplace=True)
-#        df[rollavg_col].fillna(method='bfill', inplace=True)
-#        
-#        # Compute features gradient
-#        grad_col = 'grad_' + col
-#        df[grad_col] = df[col].diff()
-#        df[grad_col].fillna(method='ffill', inplace=True)
-#        df[grad_col].fillna(method='bfill', inplace=True)
-#    dfs.append(df)
-#training_data = pd.concat(dfs)
-#PE_mean = training_data.PE.mean()
-#roll_PE_mean = training_data.rollavg_PE.mean()
-#training_data['PE'] = training_data.PE.replace({np.nan: PE_mean})
-#training_data['rollavg_PE'] = training_data['rollavg_PE'].replace(
-#        {np.nan: roll_PE_mean})
+dfs = []
+for well in training_data['Well Name'].unique():
+    df = training_data[training_data['Well Name']==well].copy(deep=True)
+    df.sort_values('Depth', inplace=True)
+    for col in ['PE', 'GR', 'PHIND', 'ILD_log10', 'DeltaPHI']:
+        # Rolling averages
+        rollavg_col = 'rollavg_' + col
+        df[rollavg_col] = df[col].rolling(window=10, center=False).mean()
+        df[rollavg_col].fillna(method='ffill', inplace=True)
+        df[rollavg_col].fillna(method='bfill', inplace=True)
+        
+        # Compute features gradient
+        grad_col = 'grad_' + col
+        df[grad_col] = df[col].diff()
+        df[grad_col].fillna(method='ffill', inplace=True)
+        df[grad_col].fillna(method='bfill', inplace=True)
+    dfs.append(df)
+training_data = pd.concat(dfs)
+PE_mean = training_data.PE.mean()
+roll_PE_mean = training_data.rollavg_PE.mean()
+training_data['PE'] = training_data.PE.replace({np.nan: PE_mean})
+training_data['rollavg_PE'] = training_data['rollavg_PE'].replace(
+        {np.nan: roll_PE_mean})
 feature_vectors = training_data.drop(['Well Name', 'Facies',
                                       'FaciesLabels', 'Formation'], axis=1)
 feature_vectors.describe()
 
-#dfs = []
-#for well in validationFull['Well Name'].unique():
-#    df = validationFull[validationFull['Well Name'] == well].copy(deep=True)
-#    df.sort_values('Depth', inplace=True)
-#    for col in ['PE', 'GR', 'PHIND', 'ILD_log10', 'DeltaPHI']:
-#        rollavg_col = 'rollavg_' + col
-#        df[rollavg_col] = df[col].rolling(window=10, center=False).mean()
-#        df[rollavg_col].fillna(method='ffill', inplace=True)
-#        df[rollavg_col].fillna(method='bfill', inplace=True)
-#        
-#        # Compute features gradient
-#        grad_col = 'grad_' + col
-#        df[grad_col] = df[col].diff()
-#        df[grad_col].fillna(method='ffill', inplace=True)
-#        df[grad_col].fillna(method='bfill', inplace=True)
-#    dfs.append(df)
-#validationFull = pd.concat(dfs)
+dfs = []
+for well in validationFull['Well Name'].unique():
+    df = validationFull[validationFull['Well Name'] == well].copy(deep=True)
+    df.sort_values('Depth', inplace=True)
+    for col in ['PE', 'GR', 'PHIND', 'ILD_log10', 'DeltaPHI']:
+        rollavg_col = 'rollavg_' + col
+        df[rollavg_col] = df[col].rolling(window=10, center=False).mean()
+        df[rollavg_col].fillna(method='ffill', inplace=True)
+        df[rollavg_col].fillna(method='bfill', inplace=True)
+        
+        # Compute features gradient
+        grad_col = 'grad_' + col
+        df[grad_col] = df[col].diff()
+        df[grad_col].fillna(method='ffill', inplace=True)
+        df[grad_col].fillna(method='bfill', inplace=True)
+    dfs.append(df)
+validationFull = pd.concat(dfs)
 validationFull.describe()
 validation = validationFull.drop(['Formation', 'Well Name'], axis=1)
 
@@ -165,8 +165,8 @@ for s, split in enumerate(split_list):
 def train_and_test(X_tr, y_tr, X_v, well_v, param):
     
     # Feature normalization
-#    scaler = preprocessing.RobustScaler(quantile_range=(25.0, 75.0)).fit(X_tr)
-    scaler = preprocessing.StandardScaler().fit(X_tr)
+    scaler = preprocessing.RobustScaler(quantile_range=(25.0, 75.0)).fit(X_tr)
+#    scaler = preprocessing.StandardScaler().fit(X_tr)
     X_tr = scaler.transform(X_tr)
     X_v = scaler.transform(X_v)
     
@@ -180,18 +180,28 @@ def train_and_test(X_tr, y_tr, X_v, well_v, param):
     
     # Make prediction
     y_v_hat = clf.predict(X_v)
+#    plt.plot(y_v_hat)
+#    plt.title('Before')
+#    plt.show()
 
     
     # Perform median filter to smooth results
-    for w in np.unique(well_v):
-        y_v_hat[well_v == w] = medfilt(y_v_hat[well_v == w], kernel_size=5)
+    k_size = 5
+    if len(np.unique(well_v)) > 1:
+        for w in np.unique(well_v):
+            y_v_hat[well_v == w] = medfilt(y_v_hat[well_v == w], kernel_size=k_size)
+    else:
+        y_v_hat = medfilt(y_v_hat, kernel_size=k_size)
+#    plt.plot(y_v_hat)
+#    plt.title('After')
+#    plt.show()
 
     
     return y_v_hat
 # In[82]:
 
 # Do cross validation as an average across the leave p groups out splittin
-seed = 100
+seed = 200
 np.random.seed(seed)
 
 # For each set of parameters
@@ -246,6 +256,11 @@ logo = LeaveOneGroupOut()
 all_scores = []
 for train, test in logo.split(X, y, groups=well):
     well_name = well[test[0]]
+    
+    print('well name is', well_name)
+    print(train)
+    print(test)
+    
     
     # Select training and validation data from current split
     X_tr = X[train,:]
