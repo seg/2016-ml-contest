@@ -33,9 +33,9 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | [gccrowther](https://github.com/gccrowther)   | **0.589**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/05%20-%20Facies%20Determination.ipynb) |
 | [thanish](https://github.com/thanish)         | **0.580**  | Random forest | R        | [Code](Mendacium/Mendacium/rf_sub_10.R) |
 | MandMs                                        | **0.579**  | Majority voting | Python | [Notebook](MandMs/Facies_classification-M%26Ms_plurality_voting_classifier.ipynb) |
+| [evgenizer](https://github.com/evgenizer)     | **0.578**  | Boosted trees | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
 | jpoirier                                      | **0.574**  | Random forest    | Python   | [Notebook](jpoirier/jpoirier011_submission001.ipynb) |
 | PA Team                                       | **0.573**  | Deep neural net  | Python   | [Notebook](PA_Team/PA_Team_Submission_0.ipynb) |
-| [evgenizer](https://github.com/evgenizer)     | **0.573**  | Majority voting | Python   | [Notebook](EvgenyS/Facies_classification_ES.ipynb) |
 | [kr1m](https://github.com/kr1m)               | **0.570**  | AdaBoosted trees | Python   | [Notebook](Kr1m/Kr1m_SEG_ML_Attempt1.ipynb) |
 | [ShiangYong](https://github.com/ShiangYong)   | **0.570**  | ConvNet          | Python   | [Notebook](ShiangYong/facies_classification_cnn.ipynb) |
 | CarlosFuerte                                  | **0.570**  | Multilayer perceptron | Python      | [Notebook](CarlosFuerte/ML_Submission.ipynb) |
