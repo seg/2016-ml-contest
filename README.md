@@ -22,7 +22,7 @@ You can also clone or download this repo with the green button above, or just re
 
 F1 scores of models against secret blind data in the STUART and CRAWFORD wells. The logs for those wells are available [in the repo](https://github.com/seg/2016-ml-contest/blob/master/validation_data_nofacies.csv), but contestants do not have access to the facies.
 
-**Please note that after the contest closes, we will be applying a stochastic scoring approach to the leading models. So these scores are subject to change.**
+## Just a reminder: I will be applying a stochastic scoring approach to the leading models. These scores are subject to change, and it's highly likely that positions will therefore change in the next few hours.**
 
 | Team                                          | F1         | Algorithm     | Language | Solution                 |
 |-----------------------------------------------|:----------:|---------------|----------|--------------------------|
