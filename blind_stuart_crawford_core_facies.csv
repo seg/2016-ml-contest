@@ -1,0 +1,890 @@
+WellName,Depth.ft,LithCode,LithLabel
+STUART,2807.5,3,NM Shly Silt
+STUART,2808,3,NM Shly Silt
+STUART,2808.5,3,NM Shly Silt
+STUART,2809,3,NM Shly Silt
+STUART,2809.5,3,NM Shly Silt
+STUART,2810,3,NM Shly Silt
+STUART,2810.5,3,NM Shly Silt
+STUART,2811,3,NM Shly Silt
+STUART,2811.5,3,NM Shly Silt
+STUART,2812,2,NM Silt
+STUART,2812.5,2,NM Silt
+STUART,2813,2,NM Silt
+STUART,2813.5,2,NM Silt
+STUART,2814,2,NM Silt
+STUART,2814.5,2,NM Silt
+STUART,2815,2,NM Silt
+STUART,2815.5,2,NM Silt
+STUART,2816.5,3,NM Shly Silt
+STUART,2817,3,NM Shly Silt
+STUART,2817.5,3,NM Shly Silt
+STUART,2818,3,NM Shly Silt
+STUART,2818.5,3,NM Shly Silt
+STUART,2819,1,NM Sand
+STUART,2819.5,1,NM Sand
+STUART,2820,1,NM Sand
+STUART,2820.5,1,NM Sand
+STUART,2821,1,NM Sand
+STUART,2821.5,1,NM Sand
+STUART,2822,1,NM Sand
+STUART,2822.5,1,NM Sand
+STUART,2823,3,NM Shly Silt
+STUART,2823.5,3,NM Shly Silt
+STUART,2824.5,3,NM Shly Silt
+STUART,2825,3,NM Shly Silt
+STUART,2825.5,3,NM Shly Silt
+STUART,2826,3,NM Shly Silt
+STUART,2826.5,3,NM Shly Silt
+STUART,2827,3,NM Shly Silt
+STUART,2827.5,3,NM Shly Silt
+STUART,2828,3,NM Shly Silt
+STUART,2828.5,3,NM Shly Silt
+STUART,2829,3,NM Shly Silt
+STUART,2829.5,3,NM Shly Silt
+STUART,2830,6,Dol Wackestone
+STUART,2830.5,6,Dol Wackestone
+STUART,2831,8,VF-FG Packstone
+STUART,2831.5,8,VF-FG Packstone
+STUART,2832,8,VF-FG Packstone
+STUART,2832.5,8,M-CG Packstone
+STUART,2833,6,Wackestone-Packstone
+STUART,2833.5,6,Wackestone-Packstone
+STUART,2834,6,Dol Wackestone
+STUART,2834.5,7,Fxln dolomite
+STUART,2835,7,Fxln dolomite
+STUART,2835.5,7,Fxln dolomite
+STUART,2836,4,Marine Silt or Sh
+STUART,2836.5,4,Marine Silt or Sh
+STUART,2837,4,Marine Silt or Sh
+STUART,2837.5,4,Marine Silt or Sh
+STUART,2838,4,Marine Silt or Sh
+STUART,2838.5,4,Marine Silt or Sh
+STUART,2839,4,Marine Silt or Sh
+STUART,2839.5,5,V Silty Mdst-Wkst
+STUART,2840,6,Wackestone
+STUART,2840.5,6,Wackestone
+STUART,2841,5,V Silty Mdst-Wkst
+STUART,2841.5,6,Silty Wackestone
+STUART,2842,6,Silty Wackestone
+STUART,2842.5,5,V Silty Mdst-Wkst
+STUART,2843,8,M-CG Packstone
+STUART,2843.5,9,PA Bafflestone
+STUART,2844,9,PA Bafflestone
+STUART,2844.5,8,M-CG Packstone
+STUART,2845,8,M-CG Packstone
+STUART,2845.5,6,Wackestone
+STUART,2846,6,Wackestone
+STUART,2846.5,6,Wackestone
+STUART,2847,6,Wackestone
+STUART,2847.5,6,Wackestone
+STUART,2848,6,Wackestone
+STUART,2848.5,6,Wackestone
+STUART,2849,6,Wackestone
+STUART,2849.5,6,Wackestone
+STUART,2850,6,Wackestone-Packstone
+STUART,2850.5,6,Wackestone-Packstone
+STUART,2851,6,Wackestone-Packstone
+STUART,2851.5,6,Wackestone-Packstone
+STUART,2852,6,Wackestone
+STUART,2852.5,5,Mdst-Wkst
+STUART,2853,5,Mdst-Wkst
+STUART,2853.5,5,Mdst-Wkst
+STUART,2854,5,Mdst-Wkst
+STUART,2854.5,6,Wackestone
+STUART,2855,6,Wackestone
+STUART,2855.5,6,Silty Wackestone
+STUART,2856,6,Silty Wackestone
+STUART,2856.5,6,Silty Wackestone
+STUART,2857,6,Silty Wackestone
+STUART,2857.5,4,Marine Silt or Sh
+STUART,2858,4,Marine Silt or Sh
+STUART,2858.5,4,Marine Silt or Sh
+STUART,2859,4,Marine Silt or Sh
+STUART,2859.5,4,Marine Silt or Sh
+STUART,2860,4,Marine Silt or Sh
+STUART,2860.5,4,Marine Silt or Sh
+STUART,2861,6,Wackestone
+STUART,2861.5,6,Wackestone
+STUART,2862,6,Wackestone
+STUART,2862.5,6,Wackestone
+STUART,2863,6,Wackestone
+STUART,2863.5,6,Wackestone
+STUART,2864,6,Wackestone
+STUART,2864.5,8,M-CG Packstone
+STUART,2865,8,M-CG Packstone
+STUART,2865.5,5,Mudstone
+STUART,2866,5,Mudstone
+STUART,2866.5,5,Mudstone
+STUART,2867,7,Fxln dolomite
+STUART,2867.5,5,Dol Mudstone
+STUART,2868,3,NM Shly Silt
+STUART,2868.5,3,NM Shly Silt
+STUART,2869,3,NM Shly Silt
+STUART,2869.5,3,NM Shly Silt
+STUART,2870,2,NM Silt
+STUART,2870.5,2,NM Silt
+STUART,2871,2,NM Silt
+STUART,2871.5,3,NM Shly Silt
+STUART,2872,3,NM Shly Silt
+STUART,2872.5,3,NM Shly Silt
+STUART,2873,2,NM Silt
+STUART,2873.5,2,NM Silt
+STUART,2874,2,NM Silt
+STUART,2874.5,2,NM Silt
+STUART,2875,2,NM Silt
+STUART,2875.5,2,NM Silt
+STUART,2876,2,NM Silt
+STUART,2876.5,2,NM Silt
+STUART,2877,2,NM Silt
+STUART,2877.5,2,NM Silt
+STUART,2878,2,NM Silt
+STUART,2878.5,2,NM Silt
+STUART,2879,2,NM Silt
+STUART,2879.5,2,NM Silt
+STUART,2880,3,NM Shly Silt
+STUART,2880.5,3,NM Shly Silt
+STUART,2881.5,2,NM Silt
+STUART,2882,2,NM Silt
+STUART,2882.5,3,NM Shly Silt
+STUART,2883,3,NM Shly Silt
+STUART,2883.5,7,Fxln dolomite
+STUART,2884,7,Fxln dolomite
+STUART,2884.5,7,Fxln dolomite
+STUART,2885,7,Fxln dolomite
+STUART,2885.5,7,Fxln dolomite
+STUART,2886,8,M-CG Pkst-Grnst
+STUART,2886.5,8,M-CG Pkst-Grnst
+STUART,2887,8,M-CG Pkst-Grnst
+STUART,2887.5,8,M-CG Pkst-Grnst
+STUART,2888,8,M-CG Pkst-Grnst
+STUART,2888.5,8,M-CG Packstone
+STUART,2889,8,M-CG Packstone
+STUART,2889.5,6,Dol Wkst-Pkst
+STUART,2890,6,Dol Wkst-Pkst
+STUART,2890.5,7,Fxln dolomite
+STUART,2891,7,Fxln dolomite
+STUART,2891.5,7,Fxln dolomite
+STUART,2892,7,Fxln dolomite
+STUART,2892.5,7,Fxln dolomite
+STUART,2893,6,Wackestone
+STUART,2893.5,6,Wackestone
+STUART,2894,6,Wackestone
+STUART,2894.5,6,Wackestone-Packstone
+STUART,2895,6,Wackestone-Packstone
+STUART,2895.5,6,Wackestone-Packstone
+STUART,2896,8,M-CG Packstone
+STUART,2896.5,8,M-CG Packstone
+STUART,2897,8,M-CG Packstone
+STUART,2897.5,8,M-CG Packstone
+STUART,2898,8,M-CG Pkst-Grnst
+STUART,2898.5,8,M-CG Pkst-Grnst
+STUART,2899,3,NM Shly Silt
+STUART,2899.5,3,NM Shly Silt
+STUART,2900,3,NM Shly Silt
+STUART,2900.5,3,NM Shly Silt
+STUART,2901,3,NM Shly Silt
+STUART,2901.5,3,NM Shly Silt
+STUART,2902,3,NM Shly Silt
+STUART,2902.5,3,NM Shly Silt
+STUART,2903,3,NM Shly Silt
+STUART,2903.5,3,NM Shly Silt
+STUART,2904,3,NM Shly Silt
+STUART,2904.5,3,NM Shly Silt
+STUART,2905,3,NM Shly Silt
+STUART,2905.5,3,NM Shly Silt
+STUART,2906.5,3,NM Shly Silt
+STUART,2907,3,NM Shly Silt
+STUART,2907.5,3,NM Shly Silt
+STUART,2908,3,NM Shly Silt
+STUART,2908.5,5,Mudstone
+STUART,2909,5,Mudstone
+STUART,2909.5,7,Fxln dolomite
+STUART,2910,7,Fxln dolomite
+STUART,2910.5,8,M-CG Pkst-Grnst
+STUART,2911,8,M-CG Pkst-Grnst
+STUART,2911.5,8,M-CG Pkst-Grnst
+STUART,2912,8,M-CG Pkst-Grnst
+STUART,2912.5,8,M-CG Packstone
+STUART,2913,8,M-CG Packstone
+STUART,2913.5,8,M-CG Packstone
+STUART,2914,8,M-CG Packstone
+STUART,2914.5,9,PA Bafflestone
+STUART,2915,9,PA Bafflestone
+STUART,2915.5,9,PA Bafflestone
+STUART,2916,9,PA Bafflestone
+STUART,2916.5,8,VF-FG Pkst-Grnst
+STUART,2917,8,VF-FG Pkst-Grnst
+STUART,2917.5,8,VF-FG Pkst-Grnst
+STUART,2918,8,VF-FG Pkst-Grnst
+STUART,2918.5,6,Wackestone-Packstone
+STUART,2919,6,Wackestone-Packstone
+STUART,2919.5,6,Wackestone
+STUART,2920,6,Wackestone
+STUART,2920.5,6,Wackestone
+STUART,2921,6,Wackestone
+STUART,2921.5,7,Silty Fxln Dolomite
+STUART,2922,3,NM Shly Silt
+STUART,2922.5,3,NM Shly Silt
+STUART,2923,3,NM Shly Silt
+STUART,2923.5,3,NM Shly Silt
+STUART,2924,3,NM Shly Silt
+STUART,2924.5,3,NM Shly Silt
+STUART,2925,3,NM Shly Silt
+STUART,2925.5,3,NM Shly Silt
+STUART,2926,3,NM Shly Silt
+STUART,2926.5,3,NM Shly Silt
+STUART,2927,2,NM Silt
+STUART,2927.5,2,NM Silt
+STUART,2928,2,NM Silt
+STUART,2928.5,2,NM Silt
+STUART,2929,3,NM Shly Silt
+STUART,2929.5,3,NM Shly Silt
+STUART,2930,3,NM Shly Silt
+STUART,2930.5,3,NM Shly Silt
+STUART,2931,3,NM Shly Silt
+STUART,2931.5,3,NM Shly Silt
+STUART,2932,8,M-CG Pkst-Grnst
+STUART,2932.5,8,VF-FG Pkst-Grnst
+STUART,2933,8,M-CG Pkst-Grnst
+STUART,2933.5,8,M-CG Pkst-Grnst
+STUART,2934,8,M-CG Packstone
+STUART,2934.5,6,Wackestone
+STUART,2935,6,Wackestone
+STUART,2935.5,6,Wackestone
+STUART,2936,6,Wackestone-Packstone
+STUART,2936.5,6,Wackestone-Packstone
+STUART,2937,2,NM Silt
+STUART,2937.5,2,NM Silt
+STUART,2938,2,NM Silt
+STUART,2938.5,2,NM Silt
+STUART,2939,2,NM Silt
+STUART,2939.5,3,NM Shly Silt
+STUART,2940,3,NM Shly Silt
+STUART,2940.5,3,NM Shly Silt
+STUART,2941,2,NM Silt
+STUART,2941.5,2,NM Silt
+STUART,2942,2,NM Silt
+STUART,2942.5,2,NM Silt
+STUART,2943,2,NM Silt
+STUART,2943.5,2,NM Silt
+STUART,2944,2,NM Silt
+STUART,2944.5,3,NM Shly Silt
+STUART,2945,3,NM Shly Silt
+STUART,2945.5,3,NM Shly Silt
+STUART,2946,6,Wackestone
+STUART,2946.5,6,Wackestone
+STUART,2947,8,M-CG Grainstone
+STUART,2947.5,8,M-CG Grainstone
+STUART,2948,8,M-CG Pkst-Grnst
+STUART,2948.5,8,M-CG Packstone
+STUART,2949,6,Wackestone-Packstone
+STUART,2949.5,6,Wackestone-Packstone
+STUART,2950,8,VF-FG Packstone
+STUART,2950.5,8,VF-FG Packstone
+STUART,2951,8,Silty Grainstone
+STUART,2951.5,8,Silty Grainstone
+STUART,2952,8,M-CG Packstone
+STUART,2953,3,NM Shly Silt
+STUART,2953.5,3,NM Shly Silt
+STUART,2954,3,NM Shly Silt
+STUART,2954.5,3,NM Shly Silt
+STUART,2955,8,M-CG Packstone
+STUART,2955.5,8,VF-FG Packstone
+STUART,2956,8,VF-FG Packstone
+STUART,2956.5,8,VF-FG Packstone
+STUART,2957,8,VF-FG Packstone
+STUART,2957.5,8,VF-FG Packstone
+STUART,2958,8,M-CG Packstone
+STUART,2959,7,Fxln dolomite
+STUART,2959.5,7,Fxln dolomite
+STUART,2960,7,Fxln dolomite
+STUART,2960.5,7,Fxln dolomite
+STUART,2961,7,Fxln dolomite
+STUART,2961.5,7,Fxln dolomite
+STUART,2962,7,Fxln dolomite
+STUART,2962.5,7,Fxln dolomite
+STUART,2963,7,Fxln dolomite
+STUART,2963.5,7,Fxln dolomite
+STUART,2964.5,8,Dol Pkst-Grnst
+STUART,2965,6,Wackestone
+STUART,2965.5,6,Wackestone-Packstone
+STUART,2966,6,Wackestone-Packstone
+STUART,2966.5,6,Wackestone
+STUART,2967,6,Wackestone-Packstone
+STUART,2967.5,6,Wackestone-Packstone
+STUART,2968,6,Wackestone-Packstone
+STUART,2968.5,6,Wackestone-Packstone
+STUART,2969,6,Wackestone-Packstone
+STUART,2969.5,6,Dol Wackestone
+STUART,2970,6,Dol Wackestone
+STUART,2970.5,6,Dol Wackestone
+STUART,2971.5,6,Wackestone
+STUART,2972,6,Wackestone
+STUART,2972.5,6,Silty Wackestone
+STUART,2973,6,Wackestone-Packstone
+STUART,2973.5,6,Wackestone-Packstone
+STUART,2974,6,Wackestone-Packstone
+STUART,2974.5,6,Wackestone-Packstone
+STUART,2975,6,Wackestone-Packstone
+STUART,2975.5,3,NM Shly Silt
+STUART,2976,3,NM Shly Silt
+STUART,2976.5,3,NM Shly Silt
+STUART,2977,3,NM Shly Silt
+STUART,2977.5,3,NM Shly Silt
+STUART,2978,3,NM Shly Silt
+STUART,2979,3,NM Shly Silt
+STUART,2979.5,3,NM Shly Silt
+STUART,2980,3,NM Shly Silt
+STUART,2980.5,3,NM Shly Silt
+STUART,2981,3,NM Shly Silt
+STUART,2981.5,3,NM Shly Silt
+STUART,2982,3,NM Shly Silt
+STUART,2982.5,3,NM Shly Silt
+STUART,2983,3,NM Shly Silt
+STUART,2984,3,NM Shly Silt
+STUART,2984.5,3,NM Shly Silt
+STUART,2985,3,NM Shly Silt
+STUART,2985.5,3,NM Shly Silt
+STUART,2986,3,NM Shly Silt
+STUART,2986.5,3,NM Shly Silt
+STUART,2987,3,NM Shly Silt
+STUART,2987.5,3,NM Shly Silt
+STUART,2988.5,3,NM Shly Silt
+STUART,2989,3,NM Shly Silt
+STUART,2989.5,3,NM Shly Silt
+STUART,2990,3,NM Shly Silt
+STUART,2990.5,3,NM Shly Silt
+STUART,2991,3,NM Shly Silt
+STUART,2991.5,3,NM Shly Silt
+STUART,2992,3,NM Shly Silt
+STUART,2993,3,NM Shly Silt
+STUART,2993.5,3,NM Shly Silt
+STUART,2994,3,NM Shly Silt
+STUART,2994.5,3,NM Shly Silt
+STUART,2995,3,NM Shly Silt
+STUART,2995.5,3,NM Shly Silt
+STUART,2996,3,NM Shly Silt
+STUART,2996.5,3,NM Shly Silt
+STUART,2997,6,Wackestone-Packstone
+STUART,2997.5,8,M-CG Pkst-Grnst
+STUART,2998,8,M-CG Pkst-Grnst
+STUART,2998.5,7,Fxln dolomite
+STUART,2999,7,Fxln dolomite
+STUART,2999.5,8,M-CG Packstone
+STUART,3000,8,M-CG Packstone
+STUART,3000.5,5,V Silty Mdst-Wkst
+STUART,3001,6,Wackestone
+STUART,3001.5,5,V Silty Mdst-Wkst
+STUART,3002,8,M-CG Packstone
+STUART,3002.5,8,M-CG Packstone
+STUART,3003,8,M-CG Packstone
+STUART,3003.5,8,M-CG Packstone
+STUART,3004,8,M-CG Packstone
+STUART,3004.5,6,Wackestone-Packstone
+STUART,3005,6,Wackestone-Packstone
+STUART,3005.5,6,Wackestone-Packstone
+STUART,3006,6,Wackestone-Packstone
+STUART,3006.5,6,Wackestone-Packstone
+STUART,3007,6,Wackestone-Packstone
+STUART,3007.5,6,Wackestone
+STUART,3008,6,Wackestone
+STUART,3008.5,6,Wackestone
+STUART,3009,6,Wackestone
+STUART,3009.5,6,Wackestone
+STUART,3010,6,Wackestone
+STUART,3010.5,6,Wackestone
+STUART,3011,6,Wackestone
+STUART,3011.5,6,Wackestone
+STUART,3012,6,Wackestone
+STUART,3012.5,6,Wackestone
+STUART,3013,6,Wackestone
+STUART,3013.5,6,Wackestone
+STUART,3014,6,Wackestone
+STUART,3014.5,6,Wackestone
+STUART,3015,6,Wackestone
+STUART,3015.5,6,Wackestone
+STUART,3016,5,V Silty Mdst-Wkst
+STUART,3016.5,5,V Silty Mdst-Wkst
+STUART,3017,5,V Silty Mdst-Wkst
+STUART,3017.5,5,V Silty Mdst-Wkst
+STUART,3018,5,V Silty Mdst-Wkst
+STUART,3018.5,5,V Silty Mdst-Wkst
+STUART,3019,5,V Silty Mdst-Wkst
+STUART,3019.5,5,V Silty Mdst-Wkst
+STUART,3020,5,V Silty Mdst-Wkst
+STUART,3020.5,5,V Silty Mdst-Wkst
+STUART,3021,5,V Silty Mdst-Wkst
+STUART,3021.5,5,V Silty Mdst-Wkst
+STUART,3022,5,V Silty Mdst-Wkst
+STUART,3022.5,5,V Silty Mdst-Wkst
+STUART,3023,5,V Silty Mdst-Wkst
+STUART,3023.5,5,V Silty Mdst-Wkst
+STUART,3024,5,V Silty Mdst-Wkst
+STUART,3024.5,5,V Silty Mdst-Wkst
+STUART,3025,5,V Silty Mdst-Wkst
+STUART,3025.5,5,V Silty Mdst-Wkst
+STUART,3026,5,V Silty Mdst-Wkst
+STUART,3026.5,5,V Silty Mdst-Wkst
+STUART,3027,5,V Silty Mdst-Wkst
+STUART,3027.5,5,V Silty Mdst-Wkst
+STUART,3028,4,Marine Silt or Sh
+STUART,3028.5,4,Marine Silt or Sh
+STUART,3029,4,Marine Silt or Sh
+STUART,3029.5,4,Marine Silt or Sh
+STUART,3030,4,Marine Silt or Sh
+STUART,3030.5,4,Marine Silt or Sh
+STUART,3031,4,Marine Silt or Sh
+STUART,3031.5,4,Marine Silt or Sh
+STUART,3032,4,Marine Silt or Sh
+STUART,3032.5,4,Marine Silt or Sh
+STUART,3033,4,Marine Silt or Sh
+STUART,3033.5,4,Marine Silt or Sh
+STUART,3034,4,Marine Silt or Sh
+STUART,3034.5,4,Marine Silt or Sh
+STUART,3035,4,Marine Silt or Sh
+STUART,3035.5,4,Marine Silt or Sh
+STUART,3036,4,Marine Silt or Sh
+STUART,3036.5,4,Marine Silt or Sh
+STUART,3037,4,Marine Silt or Sh
+STUART,3037.5,4,Marine Silt or Sh
+STUART,3038,4,Marine Silt or Sh
+STUART,3038.5,4,Marine Silt or Sh
+STUART,3039,4,Marine Silt or Sh
+STUART,3039.5,4,Marine Silt or Sh
+STUART,3040,4,Marine Silt or Sh
+STUART,3040.5,4,Marine Silt or Sh
+STUART,3041,4,Marine Silt or Sh
+STUART,3041.5,4,Marine Silt or Sh
+STUART,3042,4,Marine Silt or Sh
+STUART,3042.5,4,Marine Silt or Sh
+STUART,3043,4,Marine Silt or Sh
+STUART,3043.5,4,Marine Silt or Sh
+STUART,3044,4,Marine Silt or Sh
+STUART,3044.5,4,Marine Silt or Sh
+STUART,3045,4,Marine Silt or Sh
+STUART,3045.5,4,Marine Silt or Sh
+STUART,3046,4,Marine Silt or Sh
+STUART,3046.5,4,Marine Silt or Sh
+CRAWFORD,2973,8,Grainstone
+CRAWFORD,2973.5,8,Grainstone
+CRAWFORD,2974,8,Grainstone
+CRAWFORD,2974.5,8,Grainstone
+CRAWFORD,2975,8,Pkst-Grnst
+CRAWFORD,2975.5,8,Packstone
+CRAWFORD,2976,8,Packstone
+CRAWFORD,2976.5,8,Pkst-Grnst
+CRAWFORD,2977.5,8,Pkst-Grnst
+CRAWFORD,2978,7,Fxln dolomite
+CRAWFORD,2978.5,7,Fxln dolomite
+CRAWFORD,2979,8,Packstone
+CRAWFORD,2979.5,8,Packstone
+CRAWFORD,2980,5,Mdst-Wkst
+CRAWFORD,2980.5,5,Mdst-Wkst
+CRAWFORD,2981,4,Marine Silt or Sh
+CRAWFORD,2981.5,4,Marine Silt or Sh
+CRAWFORD,2982,4,Marine Silt or Sh
+CRAWFORD,2982.5,4,Marine Silt or Sh
+CRAWFORD,2983,4,Marine Silt or Sh
+CRAWFORD,2983.5,4,Marine Silt or Sh
+CRAWFORD,2984,4,Marine Silt or Sh
+CRAWFORD,2984.5,4,Marine Silt or Sh
+CRAWFORD,2985,4,Marine Silt or Sh
+CRAWFORD,2985.5,4,Marine Silt or Sh
+CRAWFORD,2986,4,Marine Silt or Sh
+CRAWFORD,2986.5,4,Marine Silt or Sh
+CRAWFORD,2987,4,Marine Silt or Sh
+CRAWFORD,2987.5,4,Marine Silt or Sh
+CRAWFORD,2988,4,Marine Silt or Sh
+CRAWFORD,2988.5,4,Marine Silt or Sh
+CRAWFORD,2989,4,Marine Silt or Sh
+CRAWFORD,2989.5,4,Marine Silt or Sh
+CRAWFORD,2990,4,Marine Silt or Sh
+CRAWFORD,2990.5,6,Wackestone
+CRAWFORD,2991,6,Wackestone
+CRAWFORD,2991.5,6,Wackestone
+CRAWFORD,2992,6,Wackestone
+CRAWFORD,2992.5,5,Mdst-Wkst
+CRAWFORD,2993,5,Mdst-Wkst
+CRAWFORD,2993.5,4,Marine Silt or Sh
+CRAWFORD,2994,4,Marine Silt or Sh
+CRAWFORD,2994.5,4,Marine Silt or Sh
+CRAWFORD,2995,4,Marine Silt or Sh
+CRAWFORD,2995.5,5,Mdst-Wkst
+CRAWFORD,2996,5,Mdst-Wkst
+CRAWFORD,2996.5,5,Mdst-Wkst
+CRAWFORD,2997,5,Mdst-Wkst
+CRAWFORD,2997.5,5,Mdst-Wkst
+CRAWFORD,2998,5,Mdst-Wkst
+CRAWFORD,2998.5,6,Wackestone
+CRAWFORD,2999,6,Wackestone
+CRAWFORD,2999.5,6,Wackestone
+CRAWFORD,3000,6,Wackestone
+CRAWFORD,3000.5,4,Marine Silt or Sh
+CRAWFORD,3001,4,Marine Silt or Sh
+CRAWFORD,3001.5,6,Wackestone
+CRAWFORD,3002,6,Wackestone
+CRAWFORD,3002.5,6,Wackestone
+CRAWFORD,3003,6,Wackestone
+CRAWFORD,3003.5,8,Packstone
+CRAWFORD,3004,8,Packstone
+CRAWFORD,3004.5,6,Wackestone-Packstone
+CRAWFORD,3005,6,Wackestone
+CRAWFORD,3005.5,6,Wackestone
+CRAWFORD,3006,6,Wackestone
+CRAWFORD,3006.5,6,Wackestone
+CRAWFORD,3007,6,Wackestone
+CRAWFORD,3007.5,6,Wackestone
+CRAWFORD,3008,4,Marine Silt or Sh
+CRAWFORD,3008.5,11,Marine sandstone
+CRAWFORD,3009,11,Marine sandstone
+CRAWFORD,3009.5,11,Marine sandstone
+CRAWFORD,3010,11,Marine sandstone
+CRAWFORD,3010.5,11,Marine sandstone
+CRAWFORD,3011,4,Marine Silt or Sh
+CRAWFORD,3011.5,4,Marine Silt or Sh
+CRAWFORD,3012,4,Marine Silt or Sh
+CRAWFORD,3012.5,4,Marine Silt or Sh
+CRAWFORD,3013,4,Marine Silt or Sh
+CRAWFORD,3013.5,4,Marine Silt or Sh
+CRAWFORD,3014,4,Marine Silt or Sh
+CRAWFORD,3014.5,4,Marine Silt or Sh
+CRAWFORD,3015,4,Marine Silt or Sh
+CRAWFORD,3015.5,4,Marine Silt or Sh
+CRAWFORD,3016,4,Marine Silt or Sh
+CRAWFORD,3016.5,6,Wackestone
+CRAWFORD,3017,6,Wackestone
+CRAWFORD,3017.5,4,Marine Silt or Sh
+CRAWFORD,3018,4,Marine Silt or Sh
+CRAWFORD,3018.5,6,Wackestone
+CRAWFORD,3019,6,Wackestone
+CRAWFORD,3019.5,6,Wackestone
+CRAWFORD,3020,6,Wackestone
+CRAWFORD,3020.5,8,Packstone
+CRAWFORD,3021,8,Packstone
+CRAWFORD,3021.5,8,Packstone
+CRAWFORD,3022,8,Packstone
+CRAWFORD,3022.5,8,Packstone
+CRAWFORD,3023,6,Wackestone-Packstone
+CRAWFORD,3023.5,6,Wackestone-Packstone
+CRAWFORD,3033,2,NM Silt
+CRAWFORD,3033.5,2,NM Silt
+CRAWFORD,3034,6,Wackestone-Packstone
+CRAWFORD,3034.5,6,Wackestone-Packstone
+CRAWFORD,3035,8,Packstone
+CRAWFORD,3036,8,Packstone
+CRAWFORD,3036.5,11,Marine sandstone
+CRAWFORD,3037,11,Marine sandstone
+CRAWFORD,3037.5,6,Wackestone
+CRAWFORD,3038,11,Marine sandstone
+CRAWFORD,3038.5,11,Marine sandstone
+CRAWFORD,3039,8,Pkst-Grnst
+CRAWFORD,3039.5,8,Grainstone
+CRAWFORD,3040,8,Grainstone
+CRAWFORD,3040.5,8,Grainstone
+CRAWFORD,3041,8,Pkst-Grnst
+CRAWFORD,3041.5,8,Packstone
+CRAWFORD,3042,8,Packstone
+CRAWFORD,3042.5,8,Packstone
+CRAWFORD,3043,8,Packstone
+CRAWFORD,3043.5,8,Packstone
+CRAWFORD,3044,8,Packstone
+CRAWFORD,3044.5,8,Pkst-Grnst
+CRAWFORD,3045,8,Pkst-Grnst
+CRAWFORD,3045.5,8,Packstone
+CRAWFORD,3046,5,Mdst-Wkst
+CRAWFORD,3046.5,5,Mdst-Wkst
+CRAWFORD,3047,5,Mdst-Wkst
+CRAWFORD,3047.5,6,Wackestone-Packstone
+CRAWFORD,3048,6,Wackestone-Packstone
+CRAWFORD,3048.5,6,Wackestone-Packstone
+CRAWFORD,3049,6,Wackestone-Packstone
+CRAWFORD,3049.5,6,Wackestone-Packstone
+CRAWFORD,3050,6,Wackestone-Packstone
+CRAWFORD,3050.5,8,Pkst-Grnst
+CRAWFORD,3051,8,Pkst-Grnst
+CRAWFORD,3051.5,7,Fxln dolomite
+CRAWFORD,3052,7,Fxln dolomite
+CRAWFORD,3052.5,7,Fxln dolomite
+CRAWFORD,3053,6,Wackestone
+CRAWFORD,3053.5,6,Wackestone
+CRAWFORD,3054,6,Wackestone
+CRAWFORD,3054.5,6,Wackestone-Packstone
+CRAWFORD,3055,8,Packstone
+CRAWFORD,3055.5,8,Pkst-Grnst
+CRAWFORD,3056,2,NM Silt
+CRAWFORD,3056.5,2,NM Silt
+CRAWFORD,3057,2,NM Silt
+CRAWFORD,3057.5,2,NM Silt
+CRAWFORD,3058,2,NM Silt
+CRAWFORD,3058.5,2,NM Silt
+CRAWFORD,3059,2,NM Silt
+CRAWFORD,3059.5,2,NM Silt
+CRAWFORD,3060,2,NM Silt
+CRAWFORD,3060.5,2,NM Silt
+CRAWFORD,3061,2,NM Silt
+CRAWFORD,3061.5,2,NM Silt
+CRAWFORD,3062,2,NM Silt
+CRAWFORD,3062.5,2,NM Silt
+CRAWFORD,3063,2,NM Silt
+CRAWFORD,3063.5,2,NM Silt
+CRAWFORD,3064,7,Fxln dolomite
+CRAWFORD,3064.5,7,Fxln dolomite
+CRAWFORD,3065,7,Fxln dolomite
+CRAWFORD,3065.5,8,Pkst-Grnst
+CRAWFORD,3066,8,Grainstone
+CRAWFORD,3066.5,8,Grainstone
+CRAWFORD,3067,8,Grainstone
+CRAWFORD,3067.5,8,Pkst-Grnst
+CRAWFORD,3068,8,Pkst-Grnst
+CRAWFORD,3068.5,8,Pkst-Grnst
+CRAWFORD,3069,8,Pkst-Grnst
+CRAWFORD,3069.5,8,Pkst-Grnst
+CRAWFORD,3070,8,Packstone
+CRAWFORD,3070.5,8,Packstone
+CRAWFORD,3071,8,Packstone
+CRAWFORD,3071.5,8,Packstone
+CRAWFORD,3072,8,Packstone
+CRAWFORD,3072.5,8,Packstone
+CRAWFORD,3073,6,Wackestone-Packstone
+CRAWFORD,3073.5,7,Fxln dolomite
+CRAWFORD,3074,7,Fxln dolomite
+CRAWFORD,3074.5,7,Fxln dolomite
+CRAWFORD,3075,7,Fxln dolomite
+CRAWFORD,3075.5,7,Fxln dolomite
+CRAWFORD,3076,7,Fxln dolomite
+CRAWFORD,3076.5,7,Fxln dolomite
+CRAWFORD,3077,6,Wackestone
+CRAWFORD,3077.5,6,Wackestone-Packstone
+CRAWFORD,3078,6,Wackestone-Packstone
+CRAWFORD,3078.5,8,Packstone
+CRAWFORD,3079,8,Packstone
+CRAWFORD,3079.5,3,NM Shly Silt
+CRAWFORD,3080,3,NM Shly Silt
+CRAWFORD,3080.5,2,NM Silt
+CRAWFORD,3081,2,NM Silt
+CRAWFORD,3081.5,2,NM Silt
+CRAWFORD,3082,2,NM Silt
+CRAWFORD,3082.5,2,NM Silt
+CRAWFORD,3083,2,NM Silt
+CRAWFORD,3083.5,2,NM Silt
+CRAWFORD,3084,2,NM Silt
+CRAWFORD,3084.5,2,NM Silt
+CRAWFORD,3085,2,NM Silt
+CRAWFORD,3085.5,2,NM Silt
+CRAWFORD,3086,2,NM Silt
+CRAWFORD,3086.5,2,NM Silt
+CRAWFORD,3087,2,NM Silt
+CRAWFORD,3087.5,2,NM Silt
+CRAWFORD,3088,3,NM Shly Silt
+CRAWFORD,3088.5,3,NM Shly Silt
+CRAWFORD,3089,8,Pkst-Grnst
+CRAWFORD,3089.5,8,Pkst-Grnst
+CRAWFORD,3090,8,Pkst-Grnst
+CRAWFORD,3090.5,8,Grainstone
+CRAWFORD,3091,8,Grainstone
+CRAWFORD,3091.5,8,Pkst-Grnst
+CRAWFORD,3092,6,Wackestone-Packstone
+CRAWFORD,3092.5,6,Wackestone-Packstone
+CRAWFORD,3093,6,Wackestone-Packstone
+CRAWFORD,3093.5,6,Wackestone
+CRAWFORD,3094,6,Wackestone
+CRAWFORD,3094.5,6,Wackestone
+CRAWFORD,3095,5,Mdst-Wkst
+CRAWFORD,3095.5,5,Mdst-Wkst
+CRAWFORD,3096,8,Packstone
+CRAWFORD,3096.5,2,NM Silt
+CRAWFORD,3097,2,NM Silt
+CRAWFORD,3097.5,2,NM Silt
+CRAWFORD,3098,2,NM Silt
+CRAWFORD,3098.5,2,NM Silt
+CRAWFORD,3099,2,NM Silt
+CRAWFORD,3099.5,1,NM Sand
+CRAWFORD,3100,1,NM Sand
+CRAWFORD,3100.5,1,NM Sand
+CRAWFORD,3101,1,NM Sand
+CRAWFORD,3101.5,1,NM Sand
+CRAWFORD,3102,1,NM Sand
+CRAWFORD,3102.5,2,NM Silt
+CRAWFORD,3103,2,NM Silt
+CRAWFORD,3103.5,2,NM Silt
+CRAWFORD,3104,2,NM Silt
+CRAWFORD,3104.5,2,NM Silt
+CRAWFORD,3105,2,NM Silt
+CRAWFORD,3105.5,3,NM Shly Silt
+CRAWFORD,3106,3,NM Shly Silt
+CRAWFORD,3106.5,6,Wackestone
+CRAWFORD,3107,8,Packstone
+CRAWFORD,3107.5,8,Packstone
+CRAWFORD,3108,8,Packstone
+CRAWFORD,3108.5,8,Packstone
+CRAWFORD,3109,8,Packstone
+CRAWFORD,3109.5,8,Packstone
+CRAWFORD,3110,6,Wackestone-Packstone
+CRAWFORD,3110.5,6,Wackestone-Packstone
+CRAWFORD,3111,6,Wackestone-Packstone
+CRAWFORD,3111.5,6,Wackestone-Packstone
+CRAWFORD,3112.5,6,Wackestone-Packstone
+CRAWFORD,3113,6,Wackestone
+CRAWFORD,3113.5,6,Wackestone
+CRAWFORD,3114,6,Wackestone
+CRAWFORD,3114.5,6,Wackestone
+CRAWFORD,3115,6,Wackestone-Packstone
+CRAWFORD,3115.5,2,NM Silt
+CRAWFORD,3116,2,NM Silt
+CRAWFORD,3116.5,2,NM Silt
+CRAWFORD,3117,2,NM Silt
+CRAWFORD,3117.5,2,NM Silt
+CRAWFORD,3118,2,NM Silt
+CRAWFORD,3118.5,2,NM Silt
+CRAWFORD,3120.5,2,NM Silt
+CRAWFORD,3121,2,NM Silt
+CRAWFORD,3121.5,2,NM Silt
+CRAWFORD,3122,2,NM Silt
+CRAWFORD,3122.5,2,NM Silt
+CRAWFORD,3123,2,NM Silt
+CRAWFORD,3123.5,7,Fxln dolomite
+CRAWFORD,3124,7,Fxln dolomite
+CRAWFORD,3124.5,8,Grainstone
+CRAWFORD,3125,8,Grainstone
+CRAWFORD,3125.5,8,Pkst-Grnst
+CRAWFORD,3126,8,Pkst-Grnst
+CRAWFORD,3126.5,8,Pkst-Grnst
+CRAWFORD,3127,8,Packstone
+CRAWFORD,3127.5,7,Fxln dolomite
+CRAWFORD,3128,7,Fxln dolomite
+CRAWFORD,3128.5,7,Fxln dolomite
+CRAWFORD,3129,7,Fxln dolomite
+CRAWFORD,3129.5,7,Fxln dolomite
+CRAWFORD,3130,7,Fxln dolomite
+CRAWFORD,3130.5,7,Fxln dolomite
+CRAWFORD,3131,7,Fxln dolomite
+CRAWFORD,3131.5,7,Fxln dolomite
+CRAWFORD,3132,7,Fxln dolomite
+CRAWFORD,3132.5,7,Fxln dolomite
+CRAWFORD,3133,7,Fxln dolomite
+CRAWFORD,3133.5,7,Fxln dolomite
+CRAWFORD,3134,7,Fxln dolomite
+CRAWFORD,3134.5,7,Fxln dolomite
+CRAWFORD,3135,7,Fxln dolomite
+CRAWFORD,3135.5,7,Fxln dolomite
+CRAWFORD,3136,7,Fxln dolomite
+CRAWFORD,3136.5,7,Fxln dolomite
+CRAWFORD,3137,7,Fxln dolomite
+CRAWFORD,3137.5,7,Fxln dolomite
+CRAWFORD,3138,7,Fxln dolomite
+CRAWFORD,3138.5,7,Fxln dolomite
+CRAWFORD,3139,7,Fxln dolomite
+CRAWFORD,3139.5,7,Fxln dolomite
+CRAWFORD,3140,7,Fxln dolomite
+CRAWFORD,3140.5,7,Fxln dolomite
+CRAWFORD,3141,7,Fxln dolomite
+CRAWFORD,3141.5,7,Fxln dolomite
+CRAWFORD,3142,7,Fxln dolomite
+CRAWFORD,3142.5,7,Fxln dolomite
+CRAWFORD,3143,7,Fxln dolomite
+CRAWFORD,3143.5,7,Fxln dolomite
+CRAWFORD,3144,7,Fxln dolomite
+CRAWFORD,3144.5,7,Fxln dolomite
+CRAWFORD,3145,7,Fxln dolomite
+CRAWFORD,3145.5,7,Fxln dolomite
+CRAWFORD,3146,7,Fxln dolomite
+CRAWFORD,3146.5,7,Fxln dolomite
+CRAWFORD,3147,7,Fxln dolomite
+CRAWFORD,3147.5,7,Fxln dolomite
+CRAWFORD,3148,7,Fxln dolomite
+CRAWFORD,3148.5,7,Fxln dolomite
+CRAWFORD,3149,7,Fxln dolomite
+CRAWFORD,3149.5,7,Fxln dolomite
+CRAWFORD,3150,7,Fxln dolomite
+CRAWFORD,3150.5,6,Wackestone
+CRAWFORD,3151,6,Wackestone
+CRAWFORD,3151.5,6,Wackestone
+CRAWFORD,3152,8,Packstone
+CRAWFORD,3152.5,5,Mudstone
+CRAWFORD,3153,3,NM Shly Silt
+CRAWFORD,3153.5,3,NM Shly Silt
+CRAWFORD,3154,3,NM Shly Silt
+CRAWFORD,3154.5,2,NM Silt
+CRAWFORD,3155,2,NM Silt
+CRAWFORD,3155.5,2,NM Silt
+CRAWFORD,3156,2,NM Silt
+CRAWFORD,3156.5,2,NM Silt
+CRAWFORD,3157,2,NM Silt
+CRAWFORD,3157.5,2,NM Silt
+CRAWFORD,3158,2,NM Silt
+CRAWFORD,3158.5,2,NM Silt
+CRAWFORD,3159,2,NM Silt
+CRAWFORD,3159.5,2,NM Silt
+CRAWFORD,3160,2,NM Silt
+CRAWFORD,3160.5,2,NM Silt
+CRAWFORD,3161,2,NM Silt
+CRAWFORD,3161.5,2,NM Silt
+CRAWFORD,3162,2,NM Silt
+CRAWFORD,3162.5,2,NM Silt
+CRAWFORD,3163,2,NM Silt
+CRAWFORD,3163.5,2,NM Silt
+CRAWFORD,3164,2,NM Silt
+CRAWFORD,3164.5,2,NM Silt
+CRAWFORD,3165,2,NM Silt
+CRAWFORD,3165.5,2,NM Silt
+CRAWFORD,3166,2,NM Silt
+CRAWFORD,3166.5,2,NM Silt
+CRAWFORD,3167,2,NM Silt
+CRAWFORD,3167.5,2,NM Silt
+CRAWFORD,3168,2,NM Silt
+CRAWFORD,3168.5,2,NM Silt
+CRAWFORD,3169,2,NM Silt
+CRAWFORD,3169.5,2,NM Silt
+CRAWFORD,3170,2,NM Silt
+CRAWFORD,3170.5,2,NM Silt
+CRAWFORD,3171,2,NM Silt
+CRAWFORD,3171.5,2,NM Silt
+CRAWFORD,3172,2,NM Silt
+CRAWFORD,3172.5,6,Wackestone
+CRAWFORD,3173,5,Mdst-Wkst
+CRAWFORD,3173.5,6,Wackestone
+CRAWFORD,3174,6,Wackestone
+CRAWFORD,3174.5,6,Wackestone
+CRAWFORD,3175,6,Wackestone
+CRAWFORD,3175.5,8,Packstone
+CRAWFORD,3176,8,Packstone
+CRAWFORD,3176.5,6,Wackestone-Packstone
+CRAWFORD,3177,5,Mdst-Wkst
+CRAWFORD,3177.5,5,Mdst-Wkst
+CRAWFORD,3178,6,Wackestone
+CRAWFORD,3178.5,5,Mdst-Wkst
+CRAWFORD,3179,5,Mdst-Wkst
+CRAWFORD,3179.5,5,Mdst-Wkst
+CRAWFORD,3180,5,Mdst-Wkst
+CRAWFORD,3180.5,5,Mdst-Wkst
+CRAWFORD,3181,5,Mdst-Wkst
+CRAWFORD,3181.5,5,Mdst-Wkst
+CRAWFORD,3182,5,Mdst-Wkst
+CRAWFORD,3182.5,5,Mdst-Wkst
+CRAWFORD,3183,5,Mdst-Wkst
+CRAWFORD,3183.5,5,Mdst-Wkst
+CRAWFORD,3184,5,Mdst-Wkst
+CRAWFORD,3184.5,5,Mdst-Wkst
+CRAWFORD,3185,5,Mdst-Wkst
+CRAWFORD,3185.5,5,Mdst-Wkst
+CRAWFORD,3186,5,Mdst-Wkst
+CRAWFORD,3186.5,5,Mdst-Wkst
+CRAWFORD,3187,5,Mdst-Wkst
+CRAWFORD,3187.5,5,Mdst-Wkst
+CRAWFORD,3188,5,Mdst-Wkst
+CRAWFORD,3188.5,5,Mdst-Wkst
+CRAWFORD,3189,5,Mdst-Wkst
+CRAWFORD,3189.5,5,Mdst-Wkst
+CRAWFORD,3190,5,Mdst-Wkst
+CRAWFORD,3190.5,5,Mdst-Wkst
+CRAWFORD,3191,5,Mdst-Wkst
+CRAWFORD,3191.5,5,Mdst-Wkst
+CRAWFORD,3192,5,Mdst-Wkst
+CRAWFORD,3192.5,5,Mdst-Wkst
+CRAWFORD,3193,6,Wackestone
+CRAWFORD,3193.5,6,Wackestone
+CRAWFORD,3194,6,Wackestone
+CRAWFORD,3194.5,6,Wackestone
+CRAWFORD,3195,6,Wackestone
+CRAWFORD,3195.5,6,Wackestone
