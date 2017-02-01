@@ -2,7 +2,18 @@
 
 ## THE CONTEST IS NOW CLOSED. THANK YOU TO EVERYONE THAT PARTICIPATED.
 
-**I am busy computing the final scores --- my goal is to announce these at 1600 UTC on 1 February.**
+## Final standings: congratualtions to LA_Team!
+
+The top teams, based on the median F1-micro score from 100 realizations of their models were:
+
+| Position | Team                                          | F1         | Algorithm     | Language | Solution                 |
+|----------|-----------------------------------------------|:----------:|---------------|----------|--------------------------|
+|    1     | LA_Team (Mosser, de la Fuente)                | **0.6388** | Boosted trees | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_05_VALIDATION.ipynb) |
+|    2     | ispl (Bestagini, Tuparo, Lipari)              | **0.6231** | Boosted trees | Python   | [Notebook](ispl/facies_classification_try03_v2_VALIDATION.ipynb) |
+|    3     | PA Team ([PetroAnalytix](http://petroanalytix.com/)) | **0.6225** | Boosted trees | Python   | [Notebook](PA_Team/PA_Team_Submission_8_XGB_VALIDATION.ipynb) |
+|    3     | [esaTeam](https://github.com/esa-as)  ([Earth Analytics](http://www.earthanalytics.no/index.html)) | **0.6225** | Boosted trees | Python   | [Notebook](esaTeam/esa_Submission01_VALIDATION.ipynb) |
+
+I have stochastic scores for other teams, and will continue to work through them, but it seems unlikely that these top teams will change at this point. 
 
 <hr />
 
@@ -22,9 +33,6 @@ You can also clone or download this repo with the green button above, or just re
 
 F1 scores of models against secret blind data in the STUART and CRAWFORD wells. The logs for those wells are available [in the repo](https://github.com/seg/2016-ml-contest/blob/master/validation_data_nofacies.csv), but contestants do not have access to the facies.
 
-## Just a reminder: I will be applying a stochastic scoring approach to the leading models. These scores are subject to change, and it's highly likely that positions will therefore change in the next few hours.
-
-<sup>1</sup> Pending final validation
 
 | Team                                          | F1         | Algorithm     | Language | Solution                 |
 |-----------------------------------------------|:----------:|---------------|----------|--------------------------|
@@ -36,10 +44,10 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | Pet_Stromatolite                              | **0.625**<sup>1</sup>  | Boosted trees | Python   | [Notebook](Pet_Stromatolite/Facies_Classification_Draft7.ipynb) |
 | PA Team                                       | **0.623**<sup>1</sup>  | Boosted trees | Python   | [Notebook](PA_Team/PA_Team_Submission_8_XGB.ipynb) |
 | CC_ml                                         | **0.619**  | Boosted trees | Python   | [Notebook](CC_ml/cc_submission1_no_neigh_Boosting_refine4.ipynb) |
+| geoLEARN                                      | **0.613**  | Random forest | Python   | [Notebook](geoLEARN/Submission_4_OVR_RF.ipynb) |
 | [ar4](https://github.com/ar4)                 | **0.606**  | Random forest | Python   | [Notebook](ar4/ar4_submission2.ipynb) |
 | [Houston_J](https://github.com/Houston_J)     | **0.600**  | Boosted trees | Python   | [Notebook](Houston_J/Houston_J-sub2.ipynb) |
 | Bird Team                                     | **0.598**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
-| geoLEARN                                      | **0.594**  | Random forest | Python   | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
 | [gccrowther](https://github.com/gccrowther)   | **0.589**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/05%20-%20Facies%20Determination.ipynb) |
 | [thanish](https://github.com/thanish)         | **0.580**  | Random forest | R        | [Code](Mendacium/Mendacium/rf_sub_10.R) |
 | MandMs                                        | **0.579**  | Majority voting | Python | [Notebook](MandMs/02_Facies_classification-MandMs_plurality_voting_classifier.ipynb) |
