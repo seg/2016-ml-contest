@@ -2,7 +2,7 @@
 
 ## THE CONTEST IS NOW CLOSED. THANK YOU TO EVERYONE THAT PARTICIPATED.
 
-## Final standings: congratualtions to LA_Team!
+## Final standings: congratulations to LA_Team!
 
 The top teams, based on the median F1-micro score from 100 realizations of their models were:
 
