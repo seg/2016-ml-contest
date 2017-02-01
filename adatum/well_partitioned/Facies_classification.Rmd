@@ -1,0 +1,539 @@
+---
+title: "SEG Geophysical Machine Learning Contest 2016"
+author: 'Author: [adatum](https://github.com/adatum)'
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output:
+  html_notebook:
+    theme: cerulean
+    toc: yes
+  html_document:
+    theme: cerulean
+    toc: yes
+subtitle: Predicting geological facies
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+
+# load required libraries, installing if needed
+if (!require("pacman")) install.packages("pacman", repos = "http://cran.us.r-project.org")
+pacman::p_load(parallel, doParallel, downloader, corrplot, plyr, ggplot2, GGally, MLmetrics, klaR, arm, hda, frbs, nnet, RSNNS, class, randomForest, kernlab, xgboost, Metrics, ModelMetrics, caret, caretEnsemble, RANN, dplyr)
+
+# temporary fix for missing "Mean_F1" metric in caret v6.0-73
+source(file.path("..", "lib", "multiClassSummary_fix.R"))
+source(file.path("..", "lib", "utilityFunctions.R"))
+
+DEBUG <- TRUE           # TRUE to print debugging and informative statements
+VERBOSE <- TRUE         # TRUE to display prediction results
+USE_PARALLEL <- TRUE    # TRUE to use parallel processing
+
+if(USE_PARALLEL){
+    # setup parallel computing
+    cluster <- makeCluster(detectCores()) #can use `type = "FORK"` arg in linux
+    registerDoParallel(cluster)
+}
+    
+# set seed for reproducibility 
+SEED <- 42
+set.seed(SEED)
+```
+
+## Introduction
+
+TODO: Add text
+
+## Data Exploration and Preprocessing
+
+
+
+```{r import-data}
+# dataset filenames (assumes data files should be in parent directory)
+TRAINING_FILE <- file.path("..", "..", "facies_vectors.csv")
+TESTING_FILE <- file.path("..", "..", "validation_data_nofacies.csv")
+
+# dataset ULRs
+TRAINING_URL <- "https://github.com/seg/2016-ml-contest/raw/master/facies_vectors.csv"
+
+TESTING_URL <- "https://github.com/seg/2016-ml-contest/raw/master/validation_data_nofacies.csv"
+
+if(!exists("training_data") | !exists("testing_data_nofacies")){
+        if(!file.exists(TRAINING_FILE) & !file.exists(TESTING_FILE)){
+            download(TRAINING_URL, TRAINING_FILE)
+            download(TESTING_URL, TESTING_FILE)
+        }
+        training_data <- read.csv(TRAINING_FILE, 
+                                  na.strings = c(NA, ""),
+                                  colClasses = c(rep("factor", 3),
+                                                 rep("numeric", 6),
+                                                 "factor",
+                                                 "numeric")
+                                  )
+        testing_data_nofacies <- read.csv(TESTING_FILE, 
+                                          na.strings = c(NA, ""),
+                                          colClasses = c(rep("factor", 2),
+                                                         rep("numeric", 6),
+                                                         "factor",
+                                                         "numeric")
+                                          )
+        
+        # make a copy of testing data to which to apply pre-processing
+        testing <- testing_data_nofacies
+        
+        # rename factor levels to valid R variable names
+        levels(training_data$Facies) <- paste0(rep(c("f"), 9), 1:9)
+        levels(training_data$NM_M) <- c("NM", "M")
+        levels(testing$NM_M) <- c("NM", "M")
+        levels(training_data$Formation) <- make.names(levels(training_data$Formation))
+        levels(testing$Formation) <- make.names(levels(testing$Formation))
+        training_wells <- levels(training_data$Well.Name)
+        levels(training_data$Well.Name) <- union(levels(training_data$Well.Name), levels(testing$Well.Name))
+
+}
+```
+
+```{r}
+dim(training_data)
+```
+
+```{r}
+names(training_data)
+```
+
+
+```{r}
+plot_wells(training_data)
+facies_hist(training_data)
+```
+
+
+
+```{r impute-PE}
+if(DEBUG) training_data_bak <- training_data
+noPreProc_cols <- c("Depth", "RELPOS")
+impute <- preProcess(training_data, method = c("bagImpute"))
+training_data <- predict(impute, training_data)
+```
+
+
+
+```{r grouped-rescale}
+# center and scale "Depth"" and "RELPOS"" columns to [-1, 1]
+# center and scale "GR", "ILD_log10", "DeltaPHI", "PHIND", "PE"
+grouped_rescale <- function(dat){
+    dat %>% 
+        group_by(Well.Name) %>% 
+        mutate(Depth = (Depth - ((max(Depth) + min(Depth))/2) ) / ((max(Depth) - min(Depth))/2) ) %>% 
+        mutate(RELPOS = (RELPOS - ((max(RELPOS) + min(RELPOS))/2) ) / ((max(RELPOS) - min(RELPOS))/2) ) %>%
+        mutate(GR = (GR - mean(GR))/sd(GR)) %>%
+        mutate(ILD_log10 = (ILD_log10 - mean(ILD_log10))/sd(ILD_log10)) %>%
+        mutate(DeltaPHI = (DeltaPHI - mean(DeltaPHI))/sd(DeltaPHI)) %>%
+        mutate(PHIND = (PHIND - mean(PHIND))/sd(PHIND)) %>%
+        mutate(PE = (PE - mean(PE))/sd(PE)) %>%
+        ungroup()
+}
+
+training_data <- as.data.frame(grouped_rescale(training_data))
+testing <- as.data.frame(grouped_rescale(testing))
+
+```
+
+
+
+
+```{r partition-data}
+set.seed(SEED)
+holdout_wells <- sample(training_wells, floor(length(training_wells)/4))
+training <- training_data[!training_data$Well.Name %in% holdout_wells, ]
+validation <- training_data[training_data$Well.Name %in% holdout_wells, ]
+
+rm(training_data)
+str(training)
+```
+
+
+
+
+```{r predictor-correlations, progress=FALSE}
+corrplot::corrplot(cor(subset(training, select = -c(Facies, Well.Name, Formation, NM_M))))
+
+pairsplot <- ggpairs(
+    training,
+    mapping = aes(col = Facies),
+    columns = c("GR", "ILD_log10", "DeltaPHI", "PHIND", "PE"),
+    upper = list(continuous = wrap("cor", size = 2.5)),
+    lower = list(continuous = wrap(
+        "points", size = 0.3, alpha = 0.3
+    )),
+    diag = list(continuous = wrap("densityDiag", alpha = 0.8)),
+    legend = 1
+)
+
+print(pairsplot, progress = FALSE)
+```
+
+
+## Modeling
+
+
+
+```{r model-train, results="hide"}
+
+# load models if already trained to save time
+# if models must be changed, delete "model_list.rds" in working directory before running script
+
+MODEL_FNAME <- "model_list.rds"
+
+if(file.exists(MODEL_FNAME)){
+    
+    model_list <- readRDS(MODEL_FNAME)
+    
+} else {
+    
+    CVfolds <- 10
+    CVreps <- 3
+    tuneLength <- 30
+    
+    myseeds <- set_seeds(CVfolds, CVreps, tuneLength)
+    
+    mycontrol <- trainControl(method = "adaptive_cv", 
+                              number = CVfolds,
+                              repeats = CVreps,
+                              search = "random",
+                              adaptive = list(min = 5, alpha = 0.05, 
+                                             method = "gls", complete = TRUE),
+                              seeds = myseeds,
+                              classProbs = TRUE,
+                              savePredictions = "final",
+                              selectionFunction = "best",
+                              summaryFunction = multiClassSummary
+                              )
+    
+    mymethods <- c("nnet", "rf", "svmRadial", "mlpML")
+    
+    set.seed(SEED)
+    model_list <- caretList(Facies ~ . -Well.Name -Depth,
+                            data = training,
+                            tuneLength = tuneLength,
+                            trControl = mycontrol,
+                            methodList = mymethods,
+                            continue_on_fail = TRUE,
+                            metric = "Mean_F1"
+                            )
+    
+    gridcontrol <- mycontrol
+    gridcontrol$search <- "grid"
+    knngrid <- data.frame(k = c(1:10, 1:(tuneLength-10)*5+10))
+    knnSpec <- caretModelSpec(method = "knn", tuneGrid = knngrid)
+    
+    
+    set.seed(SEED)
+    grid_models <- caretList(Facies ~ . -Well.Name -Depth,
+                           data = training,
+                           trControl = gridcontrol,
+                           tuneLength = tuneLength,
+                           tuneList = list(knn = knnSpec),
+                           #methodList = c("xgbTree", "AdaBoost.M1"),
+                           continue_on_fail = TRUE,
+                           metric = "Mean_F1"
+                           )
+    
+    model_list <- c(model_list, grid_models)
+    
+    # DANGER: make sure models are unique 
+    # remove numbered suffixes added by c.caretList
+    names(model_list) <- gsub("\\d+$", "", names(model_list))
+    
+    #save models to speed up later analyses
+    saveRDS(model_list, MODEL_FNAME)
+}
+```
+
+
+```{r model-plot}
+if(DEBUG) {
+    (runtime <- round(sapply(model_list, function(x) x$time$everything[[3]])/60, 2))
+    cat("It took", sum(runtime), "minutes to train these models.")
+}
+
+dotplot(resamples(model_list), metric = c("Mean_F1", "Mean_AUC", "Accuracy", "Kappa"))
+```
+
+
+
+```{r model-prediction, results="hide"}
+model_list_prob <- as.data.frame(lapply(model_list, function(x) predict(x, newdata = training, type = "prob")))
+model_list_vote <- as.data.frame(lapply(model_list, function(x) predict(x, newdata = training)))
+
+pred_list <- as.data.frame(lapply(model_list, function(x) predict(x, newdata = validation)))
+#pred_list <- ordered_predict(model_list, newdata = validation, reference = validation$Facies, type = "raw", metric = "F1")
+
+pred_list_prob <- as.data.frame(lapply(model_list, function(x) predict(x, newdata = validation, type = "prob")))
+#pred_list_prob <- ordered_predict(model_list, newdata = validation, reference = validation$Facies, type = "prob", metric = "F1")
+```
+
+
+```{r F1-score}
+sort(sapply(pred_list, function(x) averaged_metric(x, validation$Facies, "F1")), decreasing = TRUE)
+```
+
+```{r model-correlations}
+corrplot::corrplot(modelCor(resamples(model_list)), method = "number")
+```
+
+
+##Ensembles
+
+### Majority vote
+
+```{r model-ensemble}
+ensemble <- majority_vote(ordered_predict(model_list, newdata = validation, reference = validation$Facies, type = "raw", metric = "F1"), reference = validation$Facies, voteType = "count", metric = "F1")
+
+(CM_ensemble <- caret::confusionMatrix(data = ensemble, reference = validation$Facies, mode = "prec_recall"))
+
+F1_ensemble <- averaged_metric(ensemble, validation$Facies, "F1")
+cat("Macro F1 score averaged over all classes:", F1_ensemble)
+
+model_combos(model_list, validation$Facies, validation, plot = TRUE)
+```
+```{r prob-majority-vote}
+#prob_ensemble <- prob_majority_vote(pred_list_prob, levels(validation$Facies))
+prob_ensemble <- majority_vote(ordered_predict(model_list, newdata = validation, reference = validation$Facies, type = "prob", metric = "F1"), reference = validation$Facies, voteType = "prob", metric = "F1")
+
+(CM_prob_ensemble <- caret::confusionMatrix(data = prob_ensemble, reference = validation$Facies, mode = "prec_recall"))
+
+F1_prob_ensemble <- averaged_metric(prob_ensemble, validation$Facies, "F1")
+cat("Macro F1 score averaged over all classes:", F1_prob_ensemble)
+
+model_combos(model_list, validation$Facies, validation, voteType = "prob", plot = TRUE)
+```
+
+### Stacked models
+
+
+
+```{r stack-models, results = "hide"}
+
+# load models if already trained to save time
+# if models must be changed, delete "stack_model_list.rds" in working directory before running script
+
+STACK_MODEL_FNAME <- "stack_model_list.rds"
+
+if(file.exists(STACK_MODEL_FNAME)){
+    
+    stack_model_list <- readRDS(STACK_MODEL_FNAME)
+    
+} else {
+    
+    CVfolds <- 10
+    CVreps <- 3
+    tuneLength <- 30  
+    
+    stackseeds <- set_seeds(CVfolds, CVreps, tuneLength)
+    
+    stackcontrol <- trainControl(method = "repeatedcv", 
+                          number = CVfolds,
+                          repeats = CVreps,
+                          classProbs = TRUE,
+                          #search = "random",
+                          #adaptive = list(min = 5, alpha = 0.05, 
+                          #                  method = "gls", complete = TRUE),
+                          seeds = stackseeds,
+                          savePredictions = "final",
+                          selectionFunction = "oneSE",
+                          summaryFunction = multiClassSummary
+                          )
+    
+    knngrid <- data.frame(k = 1:3)
+    knnSpec <- caretModelSpec(method = "knn", tuneGrid = knngrid)
+    
+    stack_training <- data.frame(Facies = training$Facies, model_list_vote)
+    
+    set.seed(SEED)
+    stack_model_list <- caretList(Facies ~ .,
+                                  data = stack_training,
+                                  trControl = stackcontrol,
+                                  tuneList = list(knn = knnSpec),
+                                  #tuneLength = tuneLength,
+                                  methodList = c("rf"),
+                                  continue_on_fail = TRUE,
+                                  metric = "Mean_F1"
+                                  )
+
+    
+    #save models to speed up later analyses
+    saveRDS(stack_model_list, STACK_MODEL_FNAME)
+}
+
+
+```
+
+```{r stack-model-plot}
+if(DEBUG) {
+    (runtime <- round(sapply(stack_model_list, function(x) x$time$everything[[3]])/60, 2))
+    cat("It took", sum(runtime), "minutes to train these models.")
+    rm(runtime)
+}
+
+dotplot(resamples(stack_model_list), metric = c("Mean_AUC", "Mean_F1", "Accuracy", "Kappa"))
+```
+
+```{r stack-performance-measures}
+#stack_pred_list <- as.data.frame(lapply(stack_model_list, function(x) predict(x, newdata = pred_list_prob)))
+stack_pred_list <- as.data.frame(lapply(stack_model_list, function(x) predict(x, newdata = pred_list)))
+
+sort(sapply(stack_pred_list, function(x) averaged_metric(x, validation$Facies, "F1")), decreasing = TRUE)
+
+#model_combos(stack_model_list, validation$Facies, pred_list_prob, voteType = "prob", plot = TRUE)
+model_combos(stack_model_list, validation$Facies, pred_list, voteType = "count", plot = TRUE)
+```
+
+### Two-layered model
+
+```{r two-layered-model, results = "hide"}
+
+# load models if already trained to save time
+# if models must be changed, delete "stack_model_list.rds" in working directory before running script
+
+LAYER_MODEL_FNAME <- "layer_model_list.rds"
+
+if(file.exists(LAYER_MODEL_FNAME)){
+    
+    layer_model_list <- readRDS(LAYER_MODEL_FNAME)
+    
+} else {
+    
+    CVfolds <- 10
+    CVreps <- 3
+    tuneLength <- 30 
+    
+    layerseed <- set_seeds(CVfolds, CVreps, tuneLength)
+    
+    layercontrol <- trainControl(method = "repeatedcv", 
+                          number = CVfolds,
+                          repeats = CVreps,
+                          classProbs = TRUE,
+                          #search = "random",
+                          #adaptive = list(min = 5, alpha = 0.05, 
+                          #                  method = "gls", complete = TRUE),
+                          seeds = layerseed,
+                          savePredictions = "final",
+                          selectionFunction = "oneSE",
+                          summaryFunction = multiClassSummary
+                          )
+    
+    #layer_training <- data.frame(training[, c("Facies", "Depth", "RELPOS")], model_list_prob)
+    layer_training_vote <- data.frame(training[, c("Facies", "Depth", "RELPOS")], model_list_vote)
+    
+    knngrid <- data.frame(k = 1:3)
+    knnSpec <- caretModelSpec(method = "knn", tuneGrid = knngrid)
+
+    set.seed(SEED)
+    layer_model_list <- caretList(Facies ~ .,
+                         data = layer_training_vote,
+                         trControl = layercontrol,
+                         tuneList = list(knn = knnSpec),
+                         #tuneLength = tuneLength,
+                         methodList = c("rf"),
+                         continue_on_fail = TRUE,
+                         metric = "Mean_F1"
+                         )
+
+    #save models to speed up later analyses
+    saveRDS(layer_model_list, LAYER_MODEL_FNAME)
+}
+
+
+```
+
+```{r layer-model-plot}
+if(DEBUG) {
+    (runtime <- round(sapply(layer_model_list, function(x) x$time$everything[[3]])/60, 2))
+    cat("It took", sum(runtime), "minutes to train these models.")
+    rm(runtime)
+}
+
+dotplot(resamples(layer_model_list), metric = c("Mean_AUC", "Mean_F1", "Accuracy", "Kappa"))
+```
+
+```{r layer-performance-measures}
+#layer_validation <- data.frame(validation[, c("Facies", "Depth", "RELPOS")], pred_list_prob)
+layer_validation <- data.frame(validation[, c("Facies", "Depth", "RELPOS")], pred_list)
+
+#layer_pred <- predict(layer_model, newdata = layer_validation)
+
+layer_pred_list <- as.data.frame(lapply(layer_model_list, function(x) predict(x, newdata = layer_validation)))
+
+sort(sapply(layer_pred_list, function(x) averaged_metric(x, validation$Facies, "F1")), decreasing = TRUE)
+
+model_combos(layer_model_list, validation$Facies, layer_validation, voteType = "prob", plot = TRUE)
+```
+
+
+
+## Predictions
+
+```{r predictions}
+submission_singlemodel <- testing_data_nofacies
+submission_singlemodel$Facies <- predict(model_list$nnet, testing)
+levels(submission_singlemodel$Facies) <- 1:9
+if(VERBOSE){
+    plot_wells(submission_singlemodel)
+    facies_hist(submission_singlemodel)
+}
+write.csv(submission_singlemodel, "submission_singlemodel.csv", row.names = FALSE)
+
+submission_majority_vote <- testing_data_nofacies
+pred_majority_vote <- as.data.frame(lapply(list(nnet = model_list$nnet, rf = model_list$rf, mlpML = model_list$mlpML, svmRadial = model_list$svmRadial), function(x) predict(x, testing)))
+
+submission_majority_vote$Facies <- majority_vote(pred_majority_vote, reference = validation$Facies, voteType = "count", metric = "F1")
+levels(submission_majority_vote$Facies) <- 1:9
+if(VERBOSE){
+    plot_wells(submission_majority_vote)
+    facies_hist(submission_majority_vote)
+}
+write.csv(submission_majority_vote, "submission_majority_vote.csv", row.names = FALSE)
+
+testing_model_list_vote <- as.data.frame(lapply(model_list, function(x) predict(x, newdata = testing)))
+
+submission_stack <- testing_data_nofacies
+submission_stack$Facies <- predict(stack_model_list$rf, testing_model_list_vote)
+levels(submission_stack$Facies) <- 1:9
+if(VERBOSE){
+    plot_wells(submission_stack)
+    facies_hist(submission_stack)
+}
+write.csv(submission_stack, "submission_stack.csv", row.names = FALSE)
+
+testing_layer_vote <- data.frame(testing[, c("Depth", "RELPOS")], testing_model_list_vote)
+
+submission_layer <- testing_data_nofacies
+submission_layer$Facies <- predict(layer_model_list$knn, testing_layer_vote)
+levels(submission_layer$Facies) <- 1:9
+if(VERBOSE){
+    plot_wells(submission_layer)
+    facies_hist(submission_layer)
+}
+write.csv(submission_layer, "submission_layer.csv", row.names = FALSE)
+```
+
+
+
+
+
+	
+[^hall]: Hall, Brendon, [Facies classification using machine learning](http://library.seg.org/doi/pdf/10.1190/tle35100906.1), The Leading Edge 35, 10(2016); pp. 906-909 (4 pages), http://dx.doi.org/10.1190/tle35100906.1
+
+[^bohling]: Bohling, G. C., and M. K. Dubois, 2003. [An Integrated Application of Neural Network and Markov Chain Techniques to Prediction of Lithofacies from Well Logs](http://www.kgs.ku.edu/PRS/publication/2003/ofr2003-50.pdf), KGS Open-File Report 2003-50, 6 pp.
+
+[^dubois]: Dubois, M. K., G. C. Bohling, and S. Chakrabarti, 2007, [Comparison of four approaches to a rock facies classification problem](http://dx.doi.org/10.1016/j.cageo.2006.08.011), Computers & Geosciences, 33 (5), 599-617 pp. doi:10.1016/j.cageo.2006.08.011
+
+[^seg]: https://github.com/seg/2016-ml-contest
+
+[^adatum]: https://github.com/adatum
+
+```{r housekeeping, include=FALSE}
+if(USE_PARALLEL){
+    stopCluster(cluster)
+    registerDoSEQ()
+}
+```
