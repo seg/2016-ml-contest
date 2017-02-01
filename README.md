@@ -29,12 +29,11 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | LA_Team                                       | **0.641**  | Boosted trees | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_05.ipynb) |
 | [bestagini](https://github.com/bestagini)     | **0.640**  | Boosted trees | Python   | [Notebook](ispl/facies_classification_try03_v2.ipynb) |
 | SHandPR                                       | **0.631**  | Boosted trees | Python   | [Notebook](SHandPR/Face_classification_SHPR_GradientBoost.ipynb) |
-| [bestagini](https://github.com/bestagini)     | **0.631**  | Boosted trees | Python   | [Notebook](ispl/facies_classification_try03.ipynb) |
 | HouMath                                       | **0.630**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_06.ipynb) |
 | [esaTeam](https://github.com/esa-as)          | **0.629**  | Boosted trees | Python   | [Notebook](esaTeam/esa_Submission01.ipynb) |
 | Pet_Stromatolite                              | **0.625**  | Boosted trees | Python   | [Notebook](Pet_Stromatolite/Facies_Classification_Draft7.ipynb) |
 | PA Team                                       | **0.623**  | Boosted trees | Python   | [Notebook](PA_Team/PA_Team_Submission_8_XGB.ipynb) |
-| CC_ml                                       | **0.619**  | Boosted trees | Python   | [Notebook](CC_ml/cc_submission1_no_neigh_Boosting_refine4.ipynb) |
+| CC_ml                                         | **0.619**  | Boosted trees | Python   | [Notebook](CC_ml/cc_submission1_no_neigh_Boosting_refine4.ipynb) |
 | [ar4](https://github.com/ar4)                 | **0.606**  | Random forest | Python   | [Notebook](ar4/ar4_submission2.ipynb) |
 | [Houston_J](https://github.com/Houston_J)     | **0.600**  | Boosted trees | Python   | [Notebook](Houston_J/Houston_J-sub2.ipynb) |
 | Bird Team                                     | **0.598**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
