@@ -9,9 +9,9 @@ The top teams, based on the median F1-micro score from 100 realizations of their
 | Position | Team                                          | F1         | Algorithm     | Language | Solution                 |
 |----------|-----------------------------------------------|:----------:|---------------|----------|--------------------------|
 |    1     | LA_Team (Mosser, de la Fuente)                | **0.6388** | Boosted trees | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_05_VALIDATION.ipynb) |
-|    2     | ispl (Bestagini, Tuparo, Lipari)              | **0.6231** | Boosted trees | Python   | [Notebook](ispl/facies_classification_try03_v2_VALIDATION.ipynb) |
-|    3     | PA Team ([PetroAnalytix](http://petroanalytix.com/)) | **0.6225** | Boosted trees | Python   | [Notebook](PA_Team/PA_Team_Submission_8_XGB_VALIDATION.ipynb) |
-|    3     | [esaTeam](https://github.com/esa-as)  ([Earth Analytics](http://www.earthanalytics.no/index.html)) | **0.6225** | Boosted trees | Python   | [Notebook](esaTeam/esa_Submission01_VALIDATION.ipynb) |
+|    2     | PA Team ([PetroAnalytix](http://petroanalytix.com/)) | **0.6250** | Boosted trees | Python   | [Notebook](PA_Team/PA_Team_Submission_8_XGB_VALIDATION.ipynb) |
+|    3     | ispl (Bestagini, Tuparo, Lipari)              | **0.6231** | Boosted trees | Python   | [Notebook](ispl/facies_classification_try03_v2_VALIDATION.ipynb) |
+|    4     | [esaTeam](https://github.com/esa-as)  ([Earth Analytics](http://www.earthanalytics.no/index.html)) | **0.6225** | Boosted trees | Python   | [Notebook](esaTeam/esa_Submission01_VALIDATION.ipynb) |
 
 I have stochastic scores for other teams, and will continue to work through them, but it seems unlikely that these top teams will change at this point. 
 
